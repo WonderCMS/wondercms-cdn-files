@@ -15,6 +15,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+)$ index.php?page=$1 [QSA,L]
 RewriteRule database.js - [F]
+RewriteRule cache.json - [F]
 
 Header always edit Set-Cookie (.*) "$1; HTTPOnly"
 Header always set X-XSS-Protection "1; mode=block"
