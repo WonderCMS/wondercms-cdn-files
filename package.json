@@ -1,0 +1,32 @@
+{
+  "name": "wondercms-cdn-files",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slavenstancic/wondercms-cdn-files.git"
+  },
+  "author": "WCMS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slavenstancic/wondercms-cdn-files/issues"
+  },
+  "homepage": "https://github.com/slavenstancic/wondercms-cdn-files#readme",
+  "dependencies": {
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "css-loader": "3.4.*",
+    "mini-css-extract-plugin": "0.9.*",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "terser-webpack-plugin": "2.3.*",
+    "webpack": "4.41.*",
+    "webpack-cli": "3.3.*",
+    "webpack-fix-style-only-entries": "0.4.*"
+  }
+}
