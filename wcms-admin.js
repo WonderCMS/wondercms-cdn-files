@@ -20,7 +20,7 @@ function fieldSave(id, newContent, dataTarget, dataMenu, dataVisibility, oldCont
         target.removeClass('editTextOpen');
         const textarea = target.children('textarea').first();
         const content = textarea.val();
-        target.html( content );
+        target.html(content);
     }
 }
 
@@ -40,8 +40,20 @@ function editableTextArea(editableTarget, editable) {
     editableTarget.html(data);
 }
 
+// Open direct tab in modal
+$("#settingsModal").on("show.bs.modal", function (t) {
+    var e = $(t.relatedTarget);
+    $("a[href='" + e.data("target-tab") + "']").tab("show")
+});
+
 $(document).tabOverride(!0, "textarea");
+
 $(document).ready(function () {
+    // Loader
+    $("body").on("click", "[data-loader-id]", function (t) {
+        $("#" + $(t.target).data("loader-id")).show()
+    });
+
     // Editable fields content save
     $("body").on("click", "div.editText:not(.editTextOpen)", function () {
         const target = $(this);
@@ -53,39 +65,39 @@ $(document).ready(function () {
 
     // Menu item hidden or visible
     $("body").on("click", "i.menu-toggle", function () {
-        var a = $(this), c = (setTimeout(function () {
+        var t = $(this), e = (setTimeout(function () {
             window.location.reload()
-        }, 500), a.attr("data-menu"));
-        a.hasClass("menu-item-hide") ? (a.removeClass("glyphicon-eye-open menu-item-hide").addClass("glyphicon-eye-close menu-item-show"), a.attr("title", "Hide page from menu").attr("data-visibility", "hide"), $.post("", {
+        }, 500), t.attr("data-menu"));
+        t.hasClass("menu-item-hide") ? (t.removeClass("glyphicon-eye-open menu-item-hide").addClass("glyphicon-eye-close menu-item-show"), t.attr("title", "Hide page from menu").attr("data-visibility", "hide"), $.post("", {
             fieldname: "menuItems",
             token: token,
             content: " ",
             target: "menuItemVsbl",
-            menu: c,
+            menu: e,
             visibility: "hide"
-        }, function (a) {
-        })) : a.hasClass("menu-item-show") && (a.removeClass("glyphicon-eye-close menu-item-show").addClass("glyphicon-eye-open menu-item-hide"), a.attr("title", "Show page in menu").attr("data-visibility", "show"), $.post("", {
+        }, function (t) {
+        })) : t.hasClass("menu-item-show") && (t.removeClass("glyphicon-eye-close menu-item-show").addClass("glyphicon-eye-open menu-item-hide"), t.attr("title", "Show page in menu").attr("data-visibility", "show"), $.post("", {
             fieldname: "menuItems",
             token: token,
             content: " ",
             target: "menuItemVsbl",
-            menu: c,
+            menu: e,
             visibility: "show"
-        }, function (a) {
+        }, function (t) {
         }))
     });
 
     // Add new page
     $("body").on("click", ".menu-item-add", function () {
-        var newPage = prompt("Enter page name");
-        if (!newPage) return !1;
-        newPage = newPage.replace(/[`~;:'",.<>\{\}\[\]\\\/]/gi, "").trim(), $.post("", {
+        var t = prompt("Enter page name");
+        if (!t) return !1;
+        t = t.replace(/[`~;:'",.<>\{\}\[\]\\\/]/gi, "").trim(), $.post("", {
             fieldname: "menuItems",
             token: token,
-            content: newPage,
+            content: t,
             target: "menuItem",
             menu: "none"
-        }, function (a) {
+        }, function (t) {
         }).done(setTimeout(function () {
             window.location.reload()
         }, 500))
@@ -93,8 +105,8 @@ $(document).ready(function () {
 
     // Reorder menu item
     $("body").on("click", ".menu-item-up,.menu-item-down", function () {
-        var a = $(this), b = a.hasClass("menu-item-up") ? "-1" : "1", c = a.attr("data-menu");
-        $.post("", {fieldname: "menuItems", token: token, content: b, target: "menuItemOrder", menu: c}, function (a) {
+        var t = $(this), e = t.hasClass("menu-item-up") ? "-1" : "1", n = t.attr("data-menu");
+        $.post("", {fieldname: "menuItems", token: token, content: e, target: "menuItemOrder", menu: n}, function (t) {
         }).done(function () {
             $("#menuSettings").parent().load("index.php #menuSettings")
         })

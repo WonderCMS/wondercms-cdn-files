@@ -25,7 +25,7 @@ div.editText:empty {
     min-height: 20px
 }
 
-#save {
+#save, .loader-overlay {
     color: #ccc;
     left: 0;
     width: 100%;
@@ -160,7 +160,6 @@ div.editText:empty {
     display: inline-block
 }
 
-,
 #adminPanel .tab-pane.active a.btn {
     color: #fff
 }
@@ -178,6 +177,32 @@ div.editText:empty {
 
 #adminPanel .clear {
     clear: both
+}
+
+#adminPanel .custom-cards > div {
+    margin: 15px 0
+}
+
+#adminPanel .custom-cards > div > div {
+    box-shadow: -1px -1px 6px 0 rgba(0, 0, 0, .1);
+    padding: .5em
+}
+
+#adminPanel .custom-cards > div > div h4 {
+    font-weight: 700;
+    margin-bottom: .2em;
+    line-height: 1em;
+    min-height: 40px
+}
+
+#adminPanel .custom-cards .col-sm-4:nth-child(3n+1) {
+    clear: left
+}
+
+.adminTab.col-xs-12 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0
 }
 
 @media (min-width: 768px) {
