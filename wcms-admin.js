@@ -1,13 +1,18 @@
 function nl2br(a) {
-    return (a + "").replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, "$1<br>$2");
+    return (a + "").replace(/(?:\r\n|\r|\n)/g, "<br>");
+}
+
+function br2nl(a) {
+    return (a + "").replace(/(?:<br>|<br\/>|<br \/>)/gi, "\r\n");
 }
 
 function fieldSave(id, newContent, dataTarget, dataMenu, dataVisibility, oldContent) {
-    if (newContent !== oldContent) {
+    const saveContent = nl2br(newContent); // Revert all new lines to break points
+    if (saveContent !== oldContent) {
         $("#save").show(), $.post("", {
             fieldname: id,
             token: token,
-            content: newContent,
+            content: saveContent,
             target: dataTarget,
             menu: dataMenu,
             visibility: dataVisibility
@@ -18,9 +23,7 @@ function fieldSave(id, newContent, dataTarget, dataMenu, dataVisibility, oldCont
     } else {
         const target = $('#' + id);
         target.removeClass('editTextOpen');
-        const textarea = target.children('textarea').first();
-        const content = textarea.val();
-        target.html(content);
+        target.html(saveContent);
     }
 }
 
@@ -28,12 +31,12 @@ function editableTextArea(editableTarget, editable) {
     const data = (
         target = editableTarget,
             isEditable = editable,
-            content = isEditable ? target.html().replace(/<br>/gi, "\n") : target.html(),
+            content = isEditable ? br2nl(target.html()) : target.html(),
             oldContent = target.html(),
             title = target.attr("title") ? '"' + target.attr("title") + '" ' : '',
             targetId = target.attr('id'),
         "<textarea " + title + ' id="' + targetId + "_field\" onblur=\"" +
-        "fieldSave(targetId,(isEditable ? this.value : nl2br(this.value)),target.data('target'),target.data('menu'),target.data('visibility'), oldContent);" +
+        "fieldSave(targetId,(isEditable ? br2nl(this.value) : nl2br(this.value)),target.data('target'),target.data('menu'),target.data('visibility'), oldContent);" +
         "\">" + content + "</textarea>"
     );
 
