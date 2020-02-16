@@ -1,18 +1,9 @@
-function nl2br(a) {
-    return (a + "").replace(/(?:\r\n|\r|\n)/g, "<br>");
-}
-
-function br2nl(a) {
-    return (a + "").replace(/(?:<br>|<br\/>|<br \/>)/gi, "\r\n");
-}
-
 function fieldSave(id, newContent, dataTarget, dataMenu, dataVisibility, oldContent) {
-    const saveContent = nl2br(newContent); // Revert all new lines to break points
-    if (saveContent !== oldContent) {
+    if (newContent !== oldContent) {
         $("#save").show(), $.post("", {
             fieldname: id,
             token: token,
-            content: saveContent,
+            content: newContent,
             target: dataTarget,
             menu: dataMenu,
             visibility: dataVisibility
@@ -23,7 +14,7 @@ function fieldSave(id, newContent, dataTarget, dataMenu, dataVisibility, oldCont
     } else {
         const target = $('#' + id);
         target.removeClass('editTextOpen');
-        target.html(saveContent);
+        target.html(newContent);
     }
 }
 
@@ -31,12 +22,12 @@ function editableTextArea(editableTarget, editable) {
     const data = (
         target = editableTarget,
             isEditable = editable,
-            content = isEditable ? br2nl(target.html()) : target.html(),
+            content = target.html(),
             oldContent = target.html(),
             title = target.attr("title") ? '"' + target.attr("title") + '" ' : '',
             targetId = target.attr('id'),
         "<textarea " + title + ' id="' + targetId + "_field\" onblur=\"" +
-        "fieldSave(targetId,(isEditable ? br2nl(this.value) : nl2br(this.value)),target.data('target'),target.data('menu'),target.data('visibility'), oldContent);" +
+        "fieldSave(targetId,(this.value),target.data('target'),target.data('menu'),target.data('visibility'), oldContent);" +
         "\">" + content + "</textarea>"
     );
 
