@@ -18,10 +18,9 @@ function fieldSave(id, newContent, dataTarget, dataMenu, dataVisibility, oldCont
     }
 }
 
-function editableTextArea(editableTarget, editable) {
+function editableTextArea(editableTarget) {
     const data = (
         target = editableTarget,
-            isEditable = editable,
             content = target.html(),
             title = target.attr("title") ? '"' + target.attr("title") + '" ' : '',
             targetId = target.attr('id'),
@@ -51,7 +50,7 @@ $(document).ready(function () {
     $("body").on("click", "div.editText:not(.editTextOpen)", function () {
         const target = $(this);
         target.addClass('editTextOpen');
-        editableTextArea(target, target.hasClass("editable"));
+        editableTextArea(target);
         target.children(':first').focus();
         autosize($('textarea'));
     });
