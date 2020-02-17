@@ -23,11 +23,10 @@ function editableTextArea(editableTarget, editable) {
         target = editableTarget,
             isEditable = editable,
             content = target.html(),
-            oldContent = target.html(),
             title = target.attr("title") ? '"' + target.attr("title") + '" ' : '',
             targetId = target.attr('id'),
         "<textarea " + title + ' id="' + targetId + "_field\" onblur=\"" +
-        "fieldSave(targetId,(this.value),target.data('target'),target.data('menu'),target.data('visibility'), oldContent);" +
+        "fieldSave(targetId,this.value,target.data('target'),target.data('menu'),target.data('visibility'), content);" +
         "\">" + content + "</textarea>"
     );
 
