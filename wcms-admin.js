@@ -1,7 +1,3 @@
-function nl2br(a) {
-    return (a + "").replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, "$1<br>$2");
-}
-
 function fieldSave(id, newContent, dataTarget, dataMenu, dataVisibility, oldContent) {
     if (newContent !== oldContent) {
         $("#save").show(), $.post("", {
@@ -18,22 +14,18 @@ function fieldSave(id, newContent, dataTarget, dataMenu, dataVisibility, oldCont
     } else {
         const target = $('#' + id);
         target.removeClass('editTextOpen');
-        const textarea = target.children('textarea').first();
-        const content = textarea.val();
-        target.html(content);
+        target.html(newContent);
     }
 }
 
-function editableTextArea(editableTarget, editable) {
+function editableTextArea(editableTarget) {
     const data = (
         target = editableTarget,
-            isEditable = editable,
-            content = isEditable ? target.html().replace(/<br>/gi, "\n") : target.html(),
-            oldContent = target.html(),
+            content = target.html(),
             title = target.attr("title") ? '"' + target.attr("title") + '" ' : '',
             targetId = target.attr('id'),
         "<textarea " + title + ' id="' + targetId + "_field\" onblur=\"" +
-        "fieldSave(targetId,(isEditable ? this.value : nl2br(this.value)),target.data('target'),target.data('menu'),target.data('visibility'), oldContent);" +
+        "fieldSave(targetId,this.value,target.data('target'),target.data('menu'),target.data('visibility'), content);" +
         "\">" + content + "</textarea>"
     );
 
@@ -58,7 +50,7 @@ $(document).ready(function () {
     $("body").on("click", "div.editText:not(.editTextOpen)", function () {
         const target = $(this);
         target.addClass('editTextOpen');
-        editableTextArea(target, target.hasClass("editable"));
+        editableTextArea(target);
         target.children(':first').focus();
         autosize($('textarea'));
     });
