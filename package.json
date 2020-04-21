@@ -21,8 +21,10 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "acorn": ">=6.4.1",
     "css-loader": "3.4.*",
     "mini-css-extract-plugin": "0.9.*",
+    "minimist": ">=0.2.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "terser-webpack-plugin": "2.3.*",
     "webpack": "4.41.*",
