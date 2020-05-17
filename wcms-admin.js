@@ -196,7 +196,7 @@ const wcmsAdminActions = {
      */
     contentSave: (id, newContent, dataTarget, dataMenu, dataVisibility, oldContent) => {
         if (newContent !== oldContent) {
-            encodeURIComponent(wcmsAdminActions.sendPostRequest(id, newContent, dataTarget, dataMenu, dataVisibility));
+            wcmsAdminActions.sendPostRequest(id, newContent, dataTarget, dataMenu, dataVisibility);
             return;
         }
 
@@ -220,7 +220,7 @@ const wcmsAdminActions = {
         const dataRaw = {
             fieldname: fieldname,
             token: token,
-            content: content,
+            content: encodeURIComponent(content),
             target: target,
             menu: menu,
             visibility: visibility
