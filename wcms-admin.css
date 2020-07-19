@@ -418,17 +418,19 @@ outline: none !important;
 }
 
 #adminPanel .settings {
-    top: 20px;
+    top: 90px;
     right: 105px;
     min-height: 36px;
-    max-height: 36px
+    max-height: 36px;
+    opacity: 0.9
 }
 
 #adminPanel .logout {
-    top: 20px;
+    top: 90px;
     right: 50px;
     min-height: 36px;
-    max-height: 36px
+    max-height: 36px;
+    opacity: 0.9
 }
 
 #adminPanel footer,
