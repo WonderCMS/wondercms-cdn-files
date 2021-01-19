@@ -172,9 +172,9 @@
     width: 22px;
     height: 35px;
     background-repeat: no-repeat;
-    margin: 5px 2px 0;
+    margin: 0 2px 0;
     display: inline-block;
-    float: left;
+    vertical-align: middle;
 }
 
 #adminPanel .upArrowIcon {
