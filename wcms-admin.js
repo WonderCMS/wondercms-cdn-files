@@ -190,8 +190,8 @@ const wcmsAdminActions = {
      *
      * @returns {boolean}
      */
-    changeDefaultPage: () => {
-        wcmsAdminActions.sendPostRequest('defaultPage', this.value, 'config');
+    changeDefaultPage: (target) => {
+        wcmsAdminActions.sendPostRequest('defaultPage', target.target.value, 'config');
     },
 
     /**
