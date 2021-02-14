@@ -13,8 +13,8 @@ class wcmsAdmin {
             })
         });
 
-        document.addEventListener('click', function(e) {
-            if([...modals].includes(e.target) || [...closeModalButton].includes(e.target)) {
+        document.addEventListener('click', function (e) {
+            if ([...modals].includes(e.target) || [...closeModalButton].includes(e.target)) {
                 wcmsAdminActions.toggleModal(this, false);
             }
         });
@@ -45,11 +45,14 @@ class wcmsAdmin {
         // Menu item hidden or visible
         const menuToggling = document.querySelectorAll('i.menu-toggle');
         menuToggling.forEach((menuToggle) => {
-            menuToggle.addEventListener('click', self.hideOrShowMenuItemsAction)
+            menuToggle.addEventListener('click', self.hideOrShowMenuItemsAction);
         });
 
         // Add new page
-        document.getElementById('menuItemAdd').addEventListener('click', wcmsAdminActions.createNewPage);
+        const menuAddNewPages = document.querySelectorAll('a.menu-item-add');
+        menuAddNewPages.forEach((element) => {
+            element.addEventListener('click', (e) => wcmsAdminActions.createNewPage(e.target));
+        });
 
         // Reorder menu item
         const menuSortTriggers = document.querySelectorAll('.menu-item-up, .menu-item-down');
@@ -162,7 +165,7 @@ const wcmsAdminActions = {
         }
 
         // close all modals
-        [].forEach.call(document.getElementsByClassName('wcms-modal'), function(el) {
+        [].forEach.call(document.getElementsByClassName('wcms-modal'), function (el) {
             el.style.display = 'none';
         });
     },
@@ -172,14 +175,14 @@ const wcmsAdminActions = {
      *
      * @returns {boolean}
      */
-    createNewPage: () => {
+    createNewPage: (target) => {
         let newPageName = prompt('Enter page name');
         if (!newPageName) {
             return false;
         }
 
         newPageName = newPageName.replace(/[`~;:'",.<>\{\}\[\]\\\/]/gi, '').trim();
-        wcmsAdminActions.sendPostRequest('menuItems', newPageName, 'menuItem', 'none', 'hide');
+        wcmsAdminActions.sendPostRequest('menuItems', newPageName, 'menuItemCreate', target.dataset.menu, 'hide');
     },
 
     /**
@@ -187,8 +190,8 @@ const wcmsAdminActions = {
      *
      * @returns {boolean}
      */
-    changeDefaultPage: () => {
-        wcmsAdminActions.sendPostRequest('defaultPage', this.value, 'config');
+    changeDefaultPage: (target) => {
+        wcmsAdminActions.sendPostRequest('defaultPage', target.target.value, 'config');
     },
 
     /**
