@@ -163,7 +163,9 @@
     background-repeat: no-repeat;
     padding: 3px 3px 0 12px;
     margin-top: 9px;
-    display: inline-block
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em
 }
 
 #adminPanel .arrowIcon {
@@ -268,7 +270,8 @@
 
 #adminPanel .subTitle {
     color: #aaaaaabf;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 600;
     margin: 40px 0 8px;
     font-variant: all-small-caps
 }
@@ -288,7 +291,6 @@
 #adminPanel .tab-content {
     margin-top: 20px
 }
-
 #adminPanel .fas,
 .cursorPointer,
 .editText {
@@ -467,7 +469,8 @@ select,
 textarea {
     font-family: inherit;
     font-size: inherit;
-    line-height: inherit
+    line-height: inherit;
+    letter-spacing: inherit
 }
 
 #adminPanel p {
@@ -490,6 +493,10 @@ textarea {
     text-align: center !important
 }
 
+#adminPanel b, .custom-cards h4, .alertWrapper b {
+    color: inherit;
+}
+    
 #adminPanel .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -522,7 +529,8 @@ textarea {
 }
 
 #adminPanel .coll-xs-12 {
-    width: 100%
+    width: 100%;
+    float: left;
 }
 
 #adminPanel .coll-xs-11 {
@@ -1531,7 +1539,7 @@ fieldset[disabled] .btn {
     user-select: none;
     border: 1px solid transparent;
     border-radius: 4px;
-    color: #fff !important;
+    color: inherit;
 }
 
 #adminPanel button.close,
@@ -1927,7 +1935,8 @@ input[type=submit].btn-block {
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0
+    border-bottom-right-radius: 0;
+    border: 0
 }
 
 #adminPanel .input-group .form-control:last-child,
@@ -2007,7 +2016,7 @@ input[type=submit].btn-block {
 }
 
 #adminPanel .nav-tabs > li > a {
-    margin-right: 2px;
+    margin-right: 5px;
     line-height: 1.42857;
     border-radius: 4px 4px 0 0
 }
@@ -2063,9 +2072,9 @@ input[type=submit].btn-block {
     font-weight: 700
 }
 
-.alertWrapper .alert a {
+.alertWrapper .alert a, .alertWrapper .alert b {
     border: 0;
-    color: #337ab7;
+    color: #337ab7 !important;
     text-decoration: none
 }
 
