@@ -343,7 +343,8 @@
 }
 
 #adminPanel .nav-tabs > li > a.active {
-    border-bottom: 2px solid #1ab !important
+    color: #1ab !important;
+    border-bottom: 2px solid #1ab !important;
 }
 
 #adminPanel .modal-content {
@@ -455,7 +456,7 @@ summary {
 
 #adminPanel {
     font-family: Lucida Sans Unicode, Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.42857;
     color: #333;
     background-color: #fff;
@@ -1410,7 +1411,7 @@ input[type=radio]:focus {
     color: #555;
     background-color: #fff !important;
     background-image: none;
-    border: 1px solid #ccc;
+    border: 0;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, .075) 0 1px 1px inset;
     transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s
@@ -1711,7 +1712,7 @@ fieldset[disabled] .btn-success:hover {
 
 #adminPanel .btn-info,
 .alertWrapper .btn-info {
-    color: #fff;
+    color: #fff !important;
     background-color: #5bc0de;
     border-color: #46b8da
 }
@@ -1778,11 +1779,11 @@ fieldset[disabled] .btn-info:hover {
 }
 
 #adminPanel .danger {
-    color: #d9534f;
+    color: #ea8400;
 }
 
 #adminPanel .btn-danger {
-    color: #fff;
+    color: #fff !important;
     background-color: #d9534f;
     border-color: #d43f3a
 }
@@ -1917,7 +1918,8 @@ input[type=submit].btn-block {
 #adminPanel .input-group .form-control:not(:first-child):not(:last-child),
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child) {
-    border-radius: 0
+    border-radius: 0;
+    border: 0;
 }
 
 #adminPanel .input-group-addon,
