@@ -267,9 +267,9 @@
 }
 
 #adminPanel .subTitle {
-    color: #aaa;
+    color: #aaaaaabf;
     font-size: 24px;
-    margin: 30px 0 8px;
+    margin: 40px 0 8px;
     font-variant: all-small-caps
 }
 
@@ -308,7 +308,7 @@
 
 #adminPanel a.btn,
 #adminpanel .alert a {
-    color: #fff
+    color: #fff !important:
 }
 
 #adminPanel .editText {
@@ -353,9 +353,11 @@
 }
 
 #adminPanel .nav li {
-    font-size: 30px;
+    font-size: 25px;
     float: none;
-    display: inline-block
+    display: inline-block;
+    font-weight: bold;
+    font-variant: all-small-caps
 }
 
 #adminPanel .tab-pane.active a.btn {
@@ -1528,7 +1530,8 @@ fieldset[disabled] .btn {
     cursor: pointer;
     user-select: none;
     border: 1px solid transparent;
-    border-radius: 4px
+    border-radius: 4px;
+    color: #fff !important;
 }
 
 #adminPanel button.close,
@@ -1764,6 +1767,10 @@ fieldset[disabled] .btn-info:hover {
 #adminPanel .btn-info .badge {
     color: #5bc0de;
     background-color: #fff
+}
+
+#adminPanel .danger {
+    color: #d9534f;
 }
 
 #adminPanel .btn-danger {
