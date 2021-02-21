@@ -369,7 +369,7 @@
 
 #adminPanel .nav-link.active,
 #adminPanel .nav-tabs > li.active a,
-#adminPanel .tab-pane.active {
+#adminPanel .tab-pane.active, li {
     background: 0 !important;
     border: 0 !important;
     color: #aaa !important
@@ -1719,7 +1719,8 @@ fieldset[disabled] .wbtn-success:hover {
 .alertWrapper .wbtn-info {
     color: #fff !important;
     background-color: #5bc0de;
-    border-color: #46b8da
+    border-color: #46b8da;
+    letter-spacing: normal;
 }
 
 #adminPanel .wbtn-info.focus,
@@ -2020,6 +2021,7 @@ input[type=submit].wbtn-block {
 #adminPanel .nav-tabs > li {
     margin-bottom: -1px;
     margin-left: 10px;
+    padding:0 0.10em 0 0.10em
 }
 
 #adminPanel .nav-tabs > li > a {
