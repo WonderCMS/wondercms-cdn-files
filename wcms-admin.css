@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 #settingsModal {
-    background-color: #0000005c;
+    background-color: #0000005c
 }
 
 .settingsIcon {
@@ -44,11 +44,11 @@
     height: 1.5em;
     display: inline-block;
     margin: 10px 0px 0px -4px;
-    float: left;
+    float: left
 }
 
 .editIcon a, a:active, a:focus {
-    outline: none !important;
+    outline: none !important
 }
 
 #save,
@@ -63,6 +63,11 @@
     padding-top: 100px;
     background: rgba(51, 51, 51, .8);
     z-index: 2448
+}
+
+
+#adminPanel li {
+    color: unset;
 }
 
 #adminPanel .deleteIcon {
@@ -91,7 +96,7 @@
     float: right;
     background-repeat: no-repeat;
     margin-top: 10px;
-    color: #5bc0de;
+    color: #5bc0de
 }
 
 #adminPanel .eyeIcon.eyeShowIcon {
@@ -176,7 +181,7 @@
     background-repeat: no-repeat;
     margin: 0 2px 0;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 #adminPanel .upArrowIcon {
@@ -194,7 +199,7 @@
     z-index: 501;
     max-width: 50%;
     font-size: 14px;
-    top: 0px;
+    top: 0px
 }
 
 .editText {
@@ -227,7 +232,7 @@
     background-color: transparent;
     padding-bottom: 10px;
     resize: none;
-    text-align: inherit;
+    text-align: inherit
 }
 
 .editTextOpen {
@@ -285,7 +290,7 @@
 #adminPanel .menu-item-delete,
 .menu-item-hide,
 .menu-item-show {
-    cursor: pointer;
+    cursor: pointer
 }
 
 #adminPanel .tab-content {
@@ -369,7 +374,7 @@
 
 #adminPanel .nav-link.active,
 #adminPanel .nav-tabs > li.active a,
-#adminPanel .tab-pane.active, li {
+#adminPanel .tab-pane.active {
     background: 0 !important;
     border: 0 !important;
     color: #aaa !important
@@ -395,7 +400,7 @@
     margin-bottom: .2em;
     line-height: 1em;
     min-height: 40px;
-    margin-top: 1em;
+    margin-top: 1em
 }
 
 #adminPanel .custom-cards .wbtn {
@@ -495,7 +500,7 @@ textarea {
 }
 
 #adminPanel b, .custom-cards h4, .alertWrapper b {
-    color: inherit;
+    color: inherit
 }
     
 #adminPanel .container {
@@ -531,7 +536,7 @@ textarea {
 
 #adminPanel .coll-xs-12 {
     width: 100%;
-    float: left;
+    float: left
 }
 
 #adminPanel .coll-xs-11 {
@@ -1507,13 +1512,13 @@ fieldset[disabled] .wform-control {
 #adminPanel .border-bottom-separator {
     border-left-width: 1px;
     border-left-style: solid;
-    border-left-color: rgba(221, 221, 221, 0.5);
+    border-left-color: rgba(221, 221, 221, 0.5)
 }
 
 #adminPanel .border-left-separator {
     border-left-width: 1px;
     border-left-style: solid;
-    border-left-color: rgba(221, 221, 221, 0.5);
+    border-left-color: rgba(221, 221, 221, 0.5)
 }
 
 #adminPanel .wbtn.disabled,
@@ -1540,7 +1545,7 @@ fieldset[disabled] .wbtn {
     user-select: none;
     border: 1px solid transparent;
     border-radius: 4px;
-    color: inherit;
+    color: inherit
 }
 
 #adminPanel button.close,
@@ -1549,7 +1554,7 @@ fieldset[disabled] .wbtn {
     padding: 0;
     cursor: pointer;
     background: 0 0;
-    border: 0
+    border: 0 !important
 }
 
 #adminPanel .wbtn-default.active,
@@ -1720,7 +1725,7 @@ fieldset[disabled] .wbtn-success:hover {
     color: #fff !important;
     background-color: #5bc0de;
     border-color: #46b8da;
-    letter-spacing: normal;
+    letter-spacing: normal
 }
 
 #adminPanel .wbtn-info.focus,
@@ -1785,7 +1790,7 @@ fieldset[disabled] .wbtn-info:hover {
 }
 
 #adminPanel .danger {
-    color: #ea8400;
+    color: #ea8400
 }
 
 #adminPanel .wbtn-danger {
@@ -1925,7 +1930,7 @@ input[type=submit].wbtn-block {
 .winput-group-addon:not(:first-child):not(:last-child),
 .winput-group-btn:not(:first-child):not(:last-child) {
     border-radius: 0;
-    border: 0;
+    border: 0
 }
 
 #adminPanel .winput-group-addon,
@@ -2136,7 +2141,7 @@ input[type=submit].wbtn-block {
     display: none;
     overflow: hidden;
     outline: 0;
-    overflow-y: auto;
+    overflow-y: auto
 }
 
 #adminPanel .modal.fade .modal-dialog {
@@ -2156,7 +2161,7 @@ input[type=submit].wbtn-block {
 #adminPanel .modal-dialog {
     position: relative;
     width: auto;
-    margin: 10px auto;
+    margin: 10px auto
 }
 
 #adminPanel .modal-content {
@@ -2174,7 +2179,7 @@ input[type=submit].wbtn-block {
 }
 
 #adminPanel .modal-header .close {
-    margin: 0 0 0 auto !important;
+    margin: 0 0 0 auto !important
 }
 
 .alertWrapper .close {
@@ -2183,7 +2188,7 @@ input[type=submit].wbtn-block {
     right: -21px;
     color: inherit;
     font-family: unset;
-    line-height: 1 !important;
+    line-height: 1 !important
 }
 
 #adminPanel .modal-body {
@@ -2335,7 +2340,7 @@ input[type=submit].wbtn-block {
         width: 90%;
         max-width: 1200px;
         margin: 30px auto;
-        height: 100%;
+        height: 100%
     }
 }
 
