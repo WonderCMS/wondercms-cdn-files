@@ -218,28 +218,34 @@ const wcmsAdminActions = {
      * @param visibility
      */
     sendPostRequest: (fieldname, content, target, menu, visibility = null) => {
-        wcmsAdminActions.showLoader(true);
+        if (typeof saveChangesPopup !== 'undefined' && saveChangesPopup && !confirm('Save new changes?')) {
+            event.preventDefault();
+            alert("Changed are not saved, you can continue to edit or refresh the page.");
+        } 
+        else {
+            wcmsAdminActions.showLoader(true);
 
-        const dataRaw = {
-            fieldname: fieldname,
-            token: token,
-            content: encodeURIComponent(content),
-            target: target,
-            menu: menu,
-            visibility: visibility
-        };
-        const data = Object.keys(dataRaw).map(function (key, index) {
-            return [key, dataRaw[key]].join('=');
-        }).join('&');
-
-        // Send request
-        const request = new XMLHttpRequest();
-        request.onreadystatechange = function () {
-            setTimeout(() => window.location.reload(), 50);
+            const dataRaw = {
+                fieldname: fieldname,
+                token: token,
+                content: encodeURIComponent(content),
+                target: target,
+                menu: menu,
+                visibility: visibility
+            };
+            const data = Object.keys(dataRaw).map(function (key, index) {
+                return [key, dataRaw[key]].join('=');
+            }).join('&');
+    
+            // Send request
+            const request = new XMLHttpRequest();
+            request.onreadystatechange = function () {
+                setTimeout(() => window.location.reload(), 50);
+            }
+            request.open('POST', '', false);
+            request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+            request.send(data);
         }
-        request.open('POST', '', false);
-        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        request.send(data);
     },
 
     /**
