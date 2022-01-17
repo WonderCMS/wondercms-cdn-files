@@ -230,7 +230,6 @@ async function buildList() {
 
     const metadata = {
         version: 1,
-        timestamp: new Date().toISOString(),
         plugins,
         themes,
     }
