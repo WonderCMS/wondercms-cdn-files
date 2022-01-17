@@ -2,6 +2,7 @@
 name: Update WonderCMS modules file
 
 on:
+  workflow_dispatch:
   schedule:
     # Run daily at 3am
     - cron: '0 3 * * *'
