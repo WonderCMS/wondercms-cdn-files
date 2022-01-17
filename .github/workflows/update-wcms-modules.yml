@@ -1,5 +1,5 @@
 
-name: Update WonderCMS modules file
+name: Update wcms-modules.json
 
 on:
   workflow_dispatch:
@@ -9,6 +9,7 @@ on:
 
 jobs:
   update-wcms-modules:
+    name: Update wcms-modules.json
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -20,4 +21,10 @@ jobs:
     - name: Build wcms-modules.json
       run: node build-wcms-modules.js
     - name: Commit result
-      run: git add wcms-modules.json && git commit -m "Autoupdate wcms-modules.json" && git push
+      run: |
+        set -e
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add wcms-modules.json
+        git commit -m "Autoupdate wcms-modules.json"
+        git push
