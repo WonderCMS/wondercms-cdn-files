@@ -1,0 +1,456 @@
+{
+    "version": 1,
+    "timestamp": "2022-01-17T14:36:24.017Z",
+    "plugins": {
+        "summernote-editor": {
+            "name": "Summernote Editor",
+            "repo": "https://github.com/robiso/summernote-editor/tree/master",
+            "zip": "https://github.com/robiso/summernote-editor/archive/master.zip",
+            "summary": "Adds an WYSIWYG editor to all content editable fields.",
+            "version": "3.2.1",
+            "image": "https://raw.githubusercontent.com/robiso/summernote-editor/master/preview.jpg"
+        },
+        "simple-blog": {
+            "name": "Simple Blog",
+            "repo": "https://github.com/robiso/simple-blog/tree/master",
+            "zip": "https://github.com/robiso/simple-blog/archive/master.zip",
+            "summary": "Adds a simple blog section to your WonderCMS website. Created by Stephan Stanisic.",
+            "version": "3.2.2",
+            "image": "https://raw.githubusercontent.com/robiso/simple-blog/master/preview.jpg"
+        },
+        "simple-statistics": {
+            "name": "Simple Statistics",
+            "repo": "https://github.com/robiso/simple-statistics/tree/master",
+            "zip": "https://github.com/robiso/simple-statistics/archive/master.zip",
+            "summary": "A simple and privacy minded analytics/stats plugin.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/simple-statistics/master/preview.jpg"
+        },
+        "additional-contents": {
+            "name": "Additional Contents",
+            "repo": "https://github.com/robiso/additional-contents/tree/master",
+            "zip": "https://github.com/robiso/additional-contents/archive/master.zip",
+            "summary": "Easily create new editable areas or hide them.",
+            "version": "3.2.1",
+            "image": "https://raw.githubusercontent.com/robiso/additional-contents/master/preview.jpg"
+        },
+        "simple-seo": {
+            "name": "Simple Seo",
+            "repo": "https://github.com/robiso/simple-seo/tree/master",
+            "zip": "https://github.com/robiso/simple-seo/archive/master.zip",
+            "summary": "Bare minimal SEO tools. After plugin is installed, it's visible in Settings - Menu. It generates robots.txt and sitemap.txt and improves your website for search engines.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/simple-seo/master/preview.jpg"
+        },
+        "hits-counter": {
+            "name": "Hits Counter",
+            "repo": "https://github.com/robiso/hits-counter/tree/master",
+            "zip": "https://github.com/robiso/hits-counter/archive/master.zip",
+            "summary": "Simple hits counter, visible in the bottom right corner. Visible only to admin.",
+            "version": "3.0.8",
+            "image": "https://raw.githubusercontent.com/robiso/hits-counter/master/preview.jpg"
+        },
+        "social-bar": {
+            "name": "Social Bar",
+            "repo": "https://github.com/robiso/social-bar/tree/master",
+            "zip": "https://github.com/robiso/social-bar/archive/master.zip",
+            "summary": "Adds social links to the top of your website. Important: after installing, you have to manually edit the links in your plugins/social-bar/social-bar.php file.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/social-bar/master/preview.jpg"
+        },
+        "cache-thumbs": {
+            "name": "Cache Thumbs",
+            "repo": "https://github.com/robiso/cache-thumbs/tree/master",
+            "zip": "https://github.com/robiso/cache-thumbs/archive/master.zip",
+            "summary": "Cache theme/plugin thumbnails to make WonderCMS faster for the admin.",
+            "version": "3.0.0",
+            "image": "https://raw.githubusercontent.com/robiso/cache-thumbs/master/preview.jpg"
+        },
+        "summernote-air-editor": {
+            "name": "Summernote Air Editor",
+            "repo": "https://github.com/robiso/summernote-air-editor/tree/master",
+            "zip": "https://github.com/robiso/summernote-air-editor/archive/master.zip",
+            "summary": "Floating version of the summernote editor. Editor becomes visible only after selecting text with your cursor.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/summernote-air-editor/master/preview.jpg"
+        },
+        "monaco-editor": {
+            "name": "Monaco Editor",
+            "repo": "https://github.com/robiso/monaco-editor/tree/master",
+            "zip": "https://github.com/robiso/monaco-editor/archive/master.zip",
+            "summary": "Adds the Microsoft Monaco editor on content editable fields. Important: to save changes, you must click CTRL+S.",
+            "version": "3.0.4",
+            "image": "https://raw.githubusercontent.com/robiso/monaco-editor/master/preview.jpg"
+        },
+        "contact-form": {
+            "name": "Contact Form",
+            "repo": "https://github.com/robiso/contact-form/tree/master",
+            "zip": "https://github.com/robiso/contact-form/archive/master.zip",
+            "summary": "Basic contact form. Important: Requires manual editing of two additional files (config and theme.php).",
+            "version": "3.0.0",
+            "image": "https://raw.githubusercontent.com/robiso/contact-form/master/preview.jpg"
+        },
+        "translation-german": {
+            "name": "Translation German",
+            "repo": "https://github.com/robiso/translation-german/tree/master",
+            "zip": "https://github.com/robiso/translation-german/archive/master.zip",
+            "summary": "German language pack.",
+            "version": "3.0.2",
+            "image": "https://raw.githubusercontent.com/robiso/translation-german/master/preview.jpg"
+        },
+        "translation-russian": {
+            "name": "Translation Russian",
+            "repo": "https://github.com/robiso/translation-russian/tree/master",
+            "zip": "https://github.com/robiso/translation-russian/archive/master.zip",
+            "summary": "Russian language pack. Пакет русской локализации.",
+            "version": "3.1.2",
+            "image": "https://raw.githubusercontent.com/robiso/translation-russian/master/preview.jpg"
+        },
+        "translation-dutch": {
+            "name": "Translation Dutch",
+            "repo": "https://github.com/robiso/translation-dutch/tree/master",
+            "zip": "https://github.com/robiso/translation-dutch/archive/master.zip",
+            "summary": "Dutch language pack.",
+            "version": "3.0.1",
+            "image": "https://raw.githubusercontent.com/robiso/translation-dutch/master/preview.jpg"
+        },
+        "translation-polish": {
+            "name": "Translation Polish",
+            "repo": "https://github.com/robiso/translation-polish/tree/master",
+            "zip": "https://github.com/robiso/translation-polish/archive/master.zip",
+            "summary": "Polish language pack.",
+            "version": "3.1.4",
+            "image": "https://raw.githubusercontent.com/robiso/translation-polish/master/preview.jpg"
+        },
+        "translation-slovenian": {
+            "name": "Translation Slovenian",
+            "repo": "https://github.com/robiso/translation-slovenian/tree/master",
+            "zip": "https://github.com/robiso/translation-slovenian/archive/master.zip",
+            "summary": "Slovenian translation for WonderCMS settings.",
+            "version": "3.0.2",
+            "image": "https://raw.githubusercontent.com/robiso/translation-slovenian/master/preview.jpg"
+        },
+        "translation-french": {
+            "name": "Translation French",
+            "repo": "https://github.com/robiso/translation-french/tree/master",
+            "zip": "https://github.com/robiso/translation-french/archive/master.zip",
+            "summary": "French translation for WonderCMS settings.",
+            "version": "3.1.2",
+            "image": "https://raw.githubusercontent.com/robiso/translation-french/master/preview.jpg"
+        },
+        "translation-spanish": {
+            "name": "Translation Spanish",
+            "repo": "https://github.com/robiso/translation-spanish/tree/master",
+            "zip": "https://github.com/robiso/translation-spanish/archive/master.zip",
+            "summary": "Spanish translation for WonderCMS settings.",
+            "version": "3.0.1",
+            "image": "https://raw.githubusercontent.com/robiso/translation-spanish/master/preview.jpg"
+        },
+        "translation-greek": {
+            "name": "Translation Greek",
+            "repo": "https://github.com/robiso/translation-greek/tree/main",
+            "zip": "https://github.com/robiso/translation-greek/archive/main.zip",
+            "summary": "Greek translation for WonderCMS settings.",
+            "version": "3.0.3",
+            "image": "https://raw.githubusercontent.com/robiso/translation-greek/main/preview.jpg"
+        },
+        "translation-portuguese": {
+            "name": "Translation Portuguese",
+            "repo": "https://github.com/robiso/translation-portuguese/tree/main",
+            "zip": "https://github.com/robiso/translation-portuguese/archive/main.zip",
+            "summary": "Portuguese translation for WonderCMS settings.",
+            "version": "3.0.1",
+            "image": "https://raw.githubusercontent.com/robiso/translation-portuguese/main/preview.jpg"
+        },
+        "translation-swedish": {
+            "name": "Translation Swedish",
+            "repo": "https://github.com/robiso/translation-swedish/tree/main",
+            "zip": "https://github.com/robiso/translation-swedish/archive/main.zip",
+            "summary": "Swedish translation for WonderCMS settings.",
+            "version": "3.0.4",
+            "image": "https://raw.githubusercontent.com/robiso/translation-swedish/main/preview.jpg"
+        },
+        "translation-serbian": {
+            "name": "Translation Serbian",
+            "repo": "https://github.com/robiso/translation-serbian/tree/master",
+            "zip": "https://github.com/robiso/translation-serbian/archive/master.zip",
+            "summary": "Serbian language pack.",
+            "version": "1.0.0",
+            "image": "https://raw.githubusercontent.com/robiso/translation-serbian/master/preview.jpg"
+        },
+        "translation-danish": {
+            "name": "Translation Danish",
+            "repo": "https://github.com/robiso/translation-danish/tree/main",
+            "zip": "https://github.com/robiso/translation-danish/archive/main.zip",
+            "summary": "Danish translation for WonderCMS settings.",
+            "version": "1.0.1",
+            "image": "https://raw.githubusercontent.com/robiso/translation-danish/main/preview.jpg"
+        },
+        "translation-korean": {
+            "name": "Translation Korean",
+            "repo": "https://github.com/robiso/translation-korean/tree/main",
+            "zip": "https://github.com/robiso/translation-korean/archive/main.zip",
+            "summary": "WonderCMS 메뉴 한글 번역 플러그인",
+            "version": "1.0.0",
+            "image": "https://raw.githubusercontent.com/robiso/translation-korean/main/preview.jpg"
+        },
+        "translation-arabic": {
+            "name": "Translation Arabic",
+            "repo": "https://github.com/robiso/translation-arabic/tree/master",
+            "zip": "https://github.com/robiso/translation-arabic/archive/master.zip",
+            "summary": "Arabic translation for WonderCMS settings.",
+            "version": "1.0",
+            "image": "https://raw.githubusercontent.com/robiso/translation-arabic/master/preview.jpg"
+        },
+        "translation-hausa": {
+            "name": "Translation Hausa",
+            "repo": "https://github.com/robiso/translation-hausa/tree/master",
+            "zip": "https://github.com/robiso/translation-hausa/archive/master.zip",
+            "summary": "Hausa translation for WonderCMS settings.",
+            "version": "1.0",
+            "image": "https://raw.githubusercontent.com/robiso/translation-hausa/master/preview.jpg"
+        },
+        "translation-hindi": {
+            "name": "Translation Hindi",
+            "repo": "https://github.com/robiso/translation-hindi/tree/master",
+            "zip": "https://github.com/robiso/translation-hindi/archive/master.zip",
+            "summary": "Hindi (हिंदी) translation for WonderCMS settings.",
+            "version": "1.0",
+            "image": "https://raw.githubusercontent.com/robiso/translation-hindi/master/preview.jpg"
+        },
+        "translation-italian": {
+            "name": "Translation Italian",
+            "repo": "https://github.com/robiso/translation-italian/tree/main",
+            "zip": "https://github.com/robiso/translation-italian/archive/main.zip",
+            "summary": "Italian translation for WonderCMS settings.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/translation-italian/main/preview.jpg"
+        }
+    },
+    "themes": {
+        "sky": {
+            "name": "Sky",
+            "repo": "https://github.com/robiso/sky/tree/master",
+            "zip": "https://github.com/robiso/sky/archive/master.zip",
+            "summary": "Default WonderCMS theme (2021).\nTheme works without Bootstrap and jQuery.\nWorks only with WonderCMS 3.0.8 and higher.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/sky/master/preview.jpg"
+        },
+        "essence": {
+            "name": "Essence",
+            "repo": "https://github.com/robiso/essence/tree/master",
+            "zip": "https://github.com/robiso/essence/archive/master.zip",
+            "summary": "Default WonderCMS theme (2020).\nWorks only with WonderCMS 3.0.8 and higher.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/essence/master/preview.jpg"
+        },
+        "violet": {
+            "name": "Violet",
+            "repo": "https://github.com/robiso/violet/tree/master",
+            "zip": "https://github.com/robiso/violet/archive/master.zip",
+            "summary": "Violet theme",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/violet/master/preview.jpg"
+        },
+        "universeGradient": {
+            "name": "UniverseGradient",
+            "repo": "https://github.com/robiso/universeGradient/tree/master",
+            "zip": "https://github.com/robiso/universeGradient/archive/master.zip",
+            "summary": "Universe gradient, variant of 2020 default theme.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/universeGradient/master/preview.jpg"
+        },
+        "default": {
+            "name": "Default",
+            "repo": "https://github.com/robiso/default/tree/master",
+            "zip": "https://github.com/robiso/default/archive/master.zip",
+            "summary": "Default WonderCMS theme (2018-2020).",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/default/master/preview.jpg"
+        },
+        "theme-w3css-singlepage": {
+            "name": "Theme W3css Singlepage",
+            "repo": "https://github.com/StephanStanisic/theme-w3css-singlepage/tree/master",
+            "zip": "https://github.com/StephanStanisic/theme-w3css-singlepage/archive/master.zip",
+            "summary": "A w3css theme ported to WonderCMS.",
+            "version": "3.0.0",
+            "image": "https://raw.githubusercontent.com/StephanStanisic/theme-w3css-singlepage/master/preview.jpg"
+        },
+        "watercolor": {
+            "name": "Watercolor",
+            "repo": "https://github.com/StephanStanisic/watercolor/tree/master",
+            "zip": "https://github.com/StephanStanisic/watercolor/archive/master.zip",
+            "summary": "Blue/green version. 100% pagespeed index! Animations. Included icons.",
+            "version": "1.0.0",
+            "image": "https://raw.githubusercontent.com/StephanStanisic/watercolor/master/preview.jpg"
+        },
+        "material": {
+            "name": "Material",
+            "repo": "https://github.com/robiso/material/tree/master",
+            "zip": "https://github.com/robiso/material/archive/master.zip",
+            "summary": "Simple Material inspired.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/material/master/preview.jpg"
+        },
+        "parallax": {
+            "name": "Parallax",
+            "repo": "https://github.com/robiso/parallax/tree/master",
+            "zip": "https://github.com/robiso/parallax/archive/master.zip",
+            "summary": "One of the most advanced WonderCMS themes created by @StephanStanisic.",
+            "version": "3.2.1",
+            "image": "https://raw.githubusercontent.com/robiso/parallax/master/preview.jpg"
+        },
+        "oldDefault": {
+            "name": "OldDefault",
+            "repo": "https://github.com/robiso/oldDefault/tree/master",
+            "zip": "https://github.com/robiso/oldDefault/archive/master.zip",
+            "summary": "Second generation of the nostalgic default WonderCMS theme.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/oldDefault/master/preview.jpg"
+        },
+        "abstract": {
+            "name": "Abstract",
+            "repo": "https://github.com/robiso/abstract/tree/master",
+            "zip": "https://github.com/robiso/abstract/archive/master.zip",
+            "summary": "Simply an Abstract.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/abstract/master/preview.jpg"
+        },
+        "bike": {
+            "name": "Bike",
+            "repo": "https://github.com/robiso/bike/tree/master",
+            "zip": "https://github.com/robiso/bike/archive/master.zip",
+            "summary": "Animated bike theme, providing more interaction to your visitors.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/bike/master/preview.jpg"
+        },
+        "black": {
+            "name": "Black",
+            "repo": "https://github.com/robiso/black/tree/master",
+            "zip": "https://github.com/robiso/black/archive/master.zip",
+            "summary": "Darker/black theme with minor animations between switching pages.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/black/master/preview.jpg"
+        },
+        "clean": {
+            "name": "Clean",
+            "repo": "https://github.com/robiso/clean/tree/master",
+            "zip": "https://github.com/robiso/clean/archive/master.zip",
+            "summary": "A breath of fresh air.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/clean/master/preview.jpg"
+        },
+        "carbide": {
+            "name": "Carbide",
+            "repo": "https://github.com/robiso/carbide/tree/master",
+            "zip": "https://github.com/robiso/carbide/archive/master.zip",
+            "summary": "Carbide's Paper Portrait theme variant (forked from Prakai Nadee).",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/carbide/master/preview.jpg"
+        },
+        "darkBlue": {
+            "name": "DarkBlue",
+            "repo": "https://github.com/robiso/darkBlue/tree/master",
+            "zip": "https://github.com/robiso/darkBlue/archive/master.zip",
+            "summary": "Blue-ish variant of nostalgic default theme.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/darkBlue/master/preview.jpg"
+        },
+        "fallout": {
+            "name": "Fallout",
+            "repo": "https://github.com/robiso/fallout/tree/master",
+            "zip": "https://github.com/robiso/fallout/archive/master.zip",
+            "summary": "Fallout theme with some cool animations. \"Back to top\" button included for scrollable pages.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/fallout/master/preview.jpg"
+        },
+        "gold": {
+            "name": "Gold",
+            "repo": "https://github.com/robiso/gold/tree/master",
+            "zip": "https://github.com/robiso/gold/archive/master.zip",
+            "summary": "Golden version of nostalgic default theme.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/gold/master/preview.jpg"
+        },
+        "green": {
+            "name": "Green",
+            "repo": "https://github.com/robiso/green/tree/master",
+            "zip": "https://github.com/robiso/green/archive/master.zip",
+            "summary": "Green variant (nostalgic).",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/green/master/preview.jpg"
+        },
+        "lightBlue": {
+            "name": "LightBlue",
+            "repo": "https://github.com/robiso/lightBlue/tree/master",
+            "zip": "https://github.com/robiso/lightBlue/archive/master.zip",
+            "summary": "Light blue variant (nostalgic).",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/lightBlue/master/preview.jpg"
+        },
+        "paper-l": {
+            "name": "Paper L",
+            "repo": "https://github.com/robiso/paper-l/tree/master",
+            "zip": "https://github.com/robiso/paper-l/archive/master.zip",
+            "summary": "Paper Lightweight wth multiple possible colors.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/paper-l/master/preview.jpg"
+        },
+        "paper-p": {
+            "name": "Paper P",
+            "repo": "https://github.com/robiso/paper-p/tree/master",
+            "zip": "https://github.com/robiso/paper-p/archive/master.zip",
+            "summary": "Paper Portrait theme. Visitors can switch between theme colors (blue, green and red).",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/paper-p/master/preview.jpg"
+        },
+        "pink": {
+            "name": "Pink",
+            "repo": "https://github.com/robiso/pink/tree/master",
+            "zip": "https://github.com/robiso/pink/archive/master.zip",
+            "summary": "Pink inspired and nostalgic default theme variant.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/pink/master/preview.jpg"
+        },
+        "purple": {
+            "name": "Purple",
+            "repo": "https://github.com/robiso/purple/tree/master",
+            "zip": "https://github.com/robiso/purple/archive/master.zip",
+            "summary": "Purple nostalgic variant.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/purple/master/preview.jpg"
+        },
+        "red": {
+            "name": "Red",
+            "repo": "https://github.com/robiso/red/tree/master",
+            "zip": "https://github.com/robiso/red/archive/master.zip",
+            "summary": "Red nostalgic variant.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/red/master/preview.jpg"
+        },
+        "supermario": {
+            "name": "Supermario",
+            "repo": "https://github.com/robiso/supermario/tree/master",
+            "zip": "https://github.com/robiso/supermario/archive/master.zip",
+            "summary": "Super mario!",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/supermario/master/preview.jpg"
+        },
+        "turbosDefault": {
+            "name": "TurbosDefault",
+            "repo": "https://github.com/robiso/turbosDefault/tree/master",
+            "zip": "https://github.com/robiso/turbosDefault/archive/master.zip",
+            "summary": "Turbo's theme - includes animatons.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/turbosDefault/master/preview.jpg"
+        },
+        "wcms-theme-adivvyo": {
+            "name": "Wcms Theme Adivvyo",
+            "repo": "https://github.com/robiso/wcms-theme-adivvyo/tree/master",
+            "zip": "https://github.com/robiso/wcms-theme-adivvyo/archive/master.zip",
+            "summary": "Adivvyo theme for WonderCMS.",
+            "version": "20205240",
+            "image": "https://raw.githubusercontent.com/robiso/wcms-theme-adivvyo/master/preview.jpg"
+        }
+    }
+}
