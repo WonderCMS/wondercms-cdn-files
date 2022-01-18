@@ -1,0 +1,30 @@
+
+name: Update wcms-modules.json
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run daily at 3am
+    - cron: '0 3 * * *'
+
+jobs:
+  update-wcms-modules:
+    name: Update wcms-modules.json
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
+    - name: Build wcms-modules.json
+      run: node build-wcms-modules.js
+    - name: Commit result
+      run: |
+        set -e
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add wcms-modules.json
+        git commit -m "Autoupdate wcms-modules.json"
+        git push
