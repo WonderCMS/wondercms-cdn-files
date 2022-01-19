@@ -14,7 +14,7 @@
             "repo": "https://github.com/robiso/simple-blog/tree/master",
             "zip": "https://github.com/robiso/simple-blog/archive/master.zip",
             "summary": "Adds a simple blog section to your WonderCMS website. Created by Stephan Stanisic.",
-            "version": "3.2.2",
+            "version": "3.2.3",
             "image": "https://raw.githubusercontent.com/robiso/simple-blog/master/preview.jpg"
         },
         "simple-statistics": {
