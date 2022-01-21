@@ -25,6 +25,11 @@ jobs:
         set -e
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git add wcms-modules.json
-        git commit -m "Autoupdate wcms-modules.json"
-        git push
+        # Commit only if there has been changes
+        if [[ -n $(git status --porcelain wcms-modules.json) ]]; then
+            git add wcms-modules.json
+            git commit -m "Autoupdate wcms-modules.json"
+            git push
+        else
+            echo "No changes to wcms-modules.json"
+        fi
