@@ -144,28 +144,34 @@ async function fetchRepoInfo(repo) {
 }
 
 /**
- * Fetches module (plugin/theme) metadata from the given repository URL.
+ * Fetches a wcms-modules.json file from the given repository URL.
  *
- * This returns an object with the following properties:
- *  - dirName: the internal, filesystem-friendly folder where this module will be installed.
- *  - name: an user-friendly module name.
- *  - version: the module's version, like "v1.2.3".
- *  - summary: a short description of the module's functionality.
- *  - image: an optional sample image displaying the new functionality.
- *  - zip: the URL of a ZIP file containing the module.
- *  - repo: the user-friendly URL of the project's page, for opening on a web browser.
+ * If the project has a legacy format with version+summary files, it is converted to the new
+ * format.
  *
  * @param repo the URL of the repository containing the module.
- * @returns an object with aforementioned entries.
+ * @param type repository type, either "plugins" or "themes". Used for legacy plugins only.
+ * @returns an object with the format of wcms-modules.json
  * @throws Error if the metadata could not be fetched successfully.
  */
-async function fetchMeta(repo) {
+async function fetchMeta(repo, type) {
     const repoInfo = await fetchRepoInfo(repo);
 
-    // Begin building meta
+    // If we have a ready-made wcms-modules.json file, use that
+    if (await asyncHeadTest(`${repoInfo.rawPrefix}/wcms-modules.json`)) {
+        const meta = JSON.parse(await asyncGet(`${repoInfo.rawPrefix}/wcms-modules.json`));
+
+        // Ensure we're using the same metadata version
+        if (meta.version != 1) {
+            throw new Error(`${repo} has an invalid metadata version ${meta.version}`);
+        }
+
+        return meta;
+    }
+
+    // Else convert from old format into the new one
     const meta = {
         name: repoInfo.name.replace(/[-_]/g, ' ').replace(/(^| )[a-z]/g, x => x.toUpperCase()),
-        dirName: repoInfo.name,
         repo: repoInfo.htmlUrl,
         zip: repoInfo.zipUrl,
     };
@@ -185,20 +191,23 @@ async function fetchMeta(repo) {
         }
     }
 
-    console.log(`Repo ${repoInfo.name}, version ${meta.version}`);
-
-    return meta;
+    // Create the structure of the wcms-modules.json file.
+    return {
+        [type]: {
+            [repoInfo.name]: meta
+        }
+    }
 }
 
 /**
  * Fetches all metadata for the repositories stored in the given file.
  *
  * @param file the file, relative to this script, which contains the repositories' URLs.
- * @returns an object, mapping the installation folder to the module's metadata, as described
- *          in the fetchMeta function.
+ * @param type repository type, either "plugins" or "themes".
+ * @returns an object with the format of wcms-modules.json
  * @throws Error if any module could not be successfully fetched.
  */
-async function fetchListMeta(file) {
+async function fetchListMeta(file, type) {
     // Read list of repositories
     const absFile = path.join(__dirname, file);
     const repos = await readLines(absFile);
@@ -207,14 +216,35 @@ async function fetchListMeta(file) {
      * This would be faster if we'd used Promise.all here as well, but then we'd hit a GitHub
      * request limit :V
      */
-    const meta = {};
+    const aggregatedMeta = {
+        plugins: {},
+        themes: {},
+    };
     for (const repo of repos) {
-        const repoMeta = await fetchMeta(repo);
-        meta[repoMeta.dirName] = repoMeta;
-        delete repoMeta.dirName;
+        const repoMeta = await fetchMeta(repo, type);
+
+        console.log(`Metadata from ${repo}:`);
+
+        // Log and aggregate plugins
+        if (repoMeta.plugins) {
+            for (const name in repoMeta.plugins) {
+                console.log(` - Plugin ${name} @ v${repoMeta.plugins[name].version}`)
+            }
+
+            Object.assign(aggregatedMeta.plugins, repoMeta.plugins);
+        }
+
+        // Log and aggregate themes
+        if (repoMeta.themes) {
+            for (const name in repoMeta.themes) {
+                console.log(` - Theme ${name} @ v${repoMeta.themes[name].version}`)
+            }
+
+            Object.assign(aggregatedMeta.themes, repoMeta.themes);
+        }
     }
 
-    return meta;
+    return aggregatedMeta;
 }
 
 /**
@@ -223,19 +253,25 @@ async function fetchListMeta(file) {
  * @throws Error if the file could not be updated successfully.
  */
 async function buildList() {
-    const [plugins, themes] = await Promise.all([
-        fetchListMeta('plugins-list.json'),
-        fetchListMeta('themes-list.json')
+    // Fetch information from plugins-list.json and themes-list.json in parallel
+    const allMetas = await Promise.all([
+        fetchListMeta('plugins-list.json', 'plugins'),
+        fetchListMeta('themes-list.json', 'themes')
     ]);
 
-    const metadata = {
+    // Aggregate the information from both lists
+    const aggregatedMeta = {
         version: 1,
-        plugins,
-        themes,
+        plugins: {},
+        themes: {},
+    };
+    for (const meta of allMetas) {
+        Object.assign(aggregatedMeta.plugins, meta.plugins);
+        Object.assign(aggregatedMeta.themes, meta.themes);
     }
 
     // Pretty-print with 4 spaces indentation
-    const metaJson = JSON.stringify(metadata, null, 4);
+    const metaJson = JSON.stringify(aggregatedMeta, null, 4);
     await fs.writeFile('wcms-modules.json', metaJson);
 }
 
