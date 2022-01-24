@@ -198,7 +198,7 @@
             "repo": "https://github.com/robiso/translation-arabic/tree/master",
             "zip": "https://github.com/robiso/translation-arabic/archive/master.zip",
             "summary": "Arabic translation for WonderCMS settings.",
-            "version": "1.0",
+            "version": "1.0.1",
             "image": "https://raw.githubusercontent.com/robiso/translation-arabic/master/preview.jpg"
         },
         "translation-hausa": {
