@@ -6,7 +6,7 @@
             "repo": "https://github.com/robiso/summernote-editor/tree/master",
             "zip": "https://github.com/robiso/summernote-editor/archive/master.zip",
             "summary": "Adds an WYSIWYG editor to all content editable fields.",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "image": "https://raw.githubusercontent.com/robiso/summernote-editor/master/preview.jpg"
         },
         "simple-blog": {
@@ -30,7 +30,7 @@
             "repo": "https://github.com/robiso/additional-contents/tree/master",
             "zip": "https://github.com/robiso/additional-contents/archive/master.zip",
             "summary": "Easily create new editable areas or hide them.",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "image": "https://raw.githubusercontent.com/robiso/additional-contents/master/preview.jpg"
         },
         "simple-seo": {
@@ -224,6 +224,14 @@
             "summary": "Italian translation for WonderCMS settings.",
             "version": "3.2.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-italian/main/preview.jpg"
+        },
+        "translation-ukranian": {
+            "name": "Translation ukranain",
+            "repo": "https://github.com/robiso/translation-ukranian/tree/main",
+            "zip": "https://github.com/robiso/translation-ukranian/archive/main.zip",
+            "summary": "Ukranian language pack.",
+            "version": "3.1.2",
+            "image": "https://raw.githubusercontent.com/robiso/translation-ukranian/main/preview.jpg"
         }
     },
     "themes": {
@@ -231,8 +239,8 @@
             "name": "Sky",
             "repo": "https://github.com/robiso/sky/tree/master",
             "zip": "https://github.com/robiso/sky/archive/master.zip",
-            "summary": "Default WonderCMS theme (2021). Theme works without Bootstrap and jQuery. Works only with WonderCMS 3.0.8 and higher.",
-            "version": "3.2.0",
+            "summary": "Default WonderCMS theme (2022). Theme works without Bootstrap and jQuery.",
+            "version": "3.2.1",
             "image": "https://raw.githubusercontent.com/robiso/sky/master/preview.jpg"
         },
         "essence": {
