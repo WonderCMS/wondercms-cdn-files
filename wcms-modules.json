@@ -6,7 +6,7 @@
             "repo": "https://github.com/robiso/summernote-editor/tree/master",
             "zip": "https://github.com/robiso/summernote-editor/archive/master.zip",
             "summary": "Adds an WYSIWYG editor to all content editable fields.",
-            "version": "3.2.2",
+            "version": "3.2.3",
             "image": "https://raw.githubusercontent.com/robiso/summernote-editor/master/preview.jpg"
         },
         "simple-blog": {
@@ -54,7 +54,7 @@
             "repo": "https://github.com/robiso/social-bar/tree/master",
             "zip": "https://github.com/robiso/social-bar/archive/master.zip",
             "summary": "Adds social links to the top of your website. Important: after installing, you have to manually edit the links in your plugins/social-bar/social-bar.php file.",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "image": "https://raw.githubusercontent.com/robiso/social-bar/master/preview.jpg"
         },
         "cache-thumbs": {
@@ -304,7 +304,7 @@
             "repo": "https://github.com/robiso/parallax/tree/master",
             "zip": "https://github.com/robiso/parallax/archive/master.zip",
             "summary": "One of the most advanced WonderCMS themes created by @StephanStanisic.",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "image": "https://raw.githubusercontent.com/robiso/parallax/master/preview.jpg"
         },
         "oldDefault": {
