@@ -232,6 +232,14 @@
             "summary": "Ukranian language pack.",
             "version": "3.1.2",
             "image": "https://raw.githubusercontent.com/robiso/translation-ukranian/main/preview.jpg"
+        },
+        "translation-czech": {
+            "name": "Translation Czech",
+            "repo": "https://github.com/robiso/translation-czech/tree/main",
+            "zip": "https://github.com/robiso/translation-czech/archive/main.zip",
+            "summary": "Czech translation for WonderCMS settings.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/translation-czech/main/preview.jpg"
         }
     },
     "themes": {
