@@ -312,7 +312,7 @@
             "repo": "https://github.com/robiso/parallax/tree/master",
             "zip": "https://github.com/robiso/parallax/archive/master.zip",
             "summary": "One of the most advanced WonderCMS themes created by @StephanStanisic.",
-            "version": "3.2.2",
+            "version": "3.2.3",
             "image": "https://raw.githubusercontent.com/robiso/parallax/master/preview.jpg"
         },
         "oldDefault": {
@@ -400,7 +400,7 @@
             "repo": "https://github.com/robiso/lightBlue/tree/master",
             "zip": "https://github.com/robiso/lightBlue/archive/master.zip",
             "summary": "Light blue variant (nostalgic).",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "image": "https://raw.githubusercontent.com/robiso/lightBlue/master/preview.jpg"
         },
         "paper-l": {
