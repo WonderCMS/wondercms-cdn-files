@@ -38,7 +38,7 @@
             "repo": "https://github.com/robiso/simple-seo/tree/master",
             "zip": "https://github.com/robiso/simple-seo/archive/master.zip",
             "summary": "Bare minimal SEO tools. After plugin is installed, it's visible in Settings - Menu. It generates robots.txt and sitemap.txt and improves your website for search engines.",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "image": "https://raw.githubusercontent.com/robiso/simple-seo/master/preview.jpg"
         },
         "hits-counter": {
