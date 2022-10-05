@@ -240,6 +240,14 @@
             "summary": "Czech translation for WonderCMS settings.",
             "version": "3.2.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-czech/main/preview.jpg"
+        },
+        "translation-Taiwan": {
+            "name": "Translation Taiwan",
+            "repo": "https://github.com/carbeso/translation-Taiwan/tree/master",
+            "zip": "https://github.com/carbeso/translation-Taiwan/archive/master.zip",
+            "summary": "WonderCMS 設定頁中文化",
+            "version": "3.3.4",
+            "image": "https://raw.githubusercontent.com/carbeso/translation-Taiwan/master/preview.jpg"
         }
     },
     "themes": {
