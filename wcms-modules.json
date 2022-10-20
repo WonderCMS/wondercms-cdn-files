@@ -285,19 +285,19 @@
         },
         "theme-w3css-singlepage": {
             "name": "Theme W3css Singlepage",
-            "repo": "https://github.com/StephanStanisic/theme-w3css-singlepage/tree/master",
-            "zip": "https://github.com/StephanStanisic/theme-w3css-singlepage/archive/master.zip",
+            "repo": "https://github.com/robiso/theme-w3css-singlepage/tree/master",
+            "zip": "https://github.com/robiso/theme-w3css-singlepage/archive/master.zip",
             "summary": "A w3css theme ported to WonderCMS.",
             "version": "3.0.0",
-            "image": "https://raw.githubusercontent.com/StephanStanisic/theme-w3css-singlepage/master/preview.jpg"
+            "image": "https://raw.githubusercontent.com/robiso/theme-w3css-singlepage/master/preview.jpg"
         },
         "watercolor": {
             "name": "Watercolor",
-            "repo": "https://github.com/StephanStanisic/watercolor/tree/master",
-            "zip": "https://github.com/StephanStanisic/watercolor/archive/master.zip",
+            "repo": "https://github.com/robiso/watercolor/tree/master",
+            "zip": "https://github.com/robiso/watercolor/archive/master.zip",
             "summary": "Blue/green version. 100% pagespeed index! Animations. Included icons.",
             "version": "1.0.0",
-            "image": "https://raw.githubusercontent.com/StephanStanisic/watercolor/master/preview.jpg"
+            "image": "https://raw.githubusercontent.com/robiso/watercolor/master/preview.jpg"
         },
         "material": {
             "name": "Material",
