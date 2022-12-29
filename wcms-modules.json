@@ -6,7 +6,7 @@
             "repo": "https://github.com/robiso/summernote-editor/tree/master",
             "zip": "https://github.com/robiso/summernote-editor/archive/master.zip",
             "summary": "Adds an WYSIWYG editor to all content editable fields.",
-            "version": "3.2.6",
+            "version": "3.4.0",
             "image": "https://raw.githubusercontent.com/robiso/summernote-editor/master/preview.jpg"
         },
         "simple-blog": {
@@ -240,6 +240,14 @@
             "summary": "Czech translation for WonderCMS settings.",
             "version": "3.2.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-czech/main/preview.jpg"
+        },
+        "translation-Taiwan": {
+            "name": "Translation Taiwan",
+            "repo": "https://github.com/robiso/translation-taiwan/tree/main",
+            "zip": "https://github.com/robiso/translation-taiwan/archive/main.zip",
+            "summary": "WonderCMS 設定頁中文化",
+            "version": "3.3.4",
+            "image": "https://raw.githubusercontent.com/robiso/translation-taiwan/main/preview.jpg"
         }
     },
     "themes": {
