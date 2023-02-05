@@ -416,7 +416,7 @@
             "repo": "https://github.com/robiso/paper-l/tree/master",
             "zip": "https://github.com/robiso/paper-l/archive/master.zip",
             "summary": "Paper Lightweight wth multiple possible colors.",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "image": "https://raw.githubusercontent.com/robiso/paper-l/master/preview.jpg"
         },
         "paper-p": {
@@ -424,7 +424,7 @@
             "repo": "https://github.com/robiso/paper-p/tree/master",
             "zip": "https://github.com/robiso/paper-p/archive/master.zip",
             "summary": "Paper Portrait theme. Visitors can switch between theme colors (blue, green and red).",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "image": "https://raw.githubusercontent.com/robiso/paper-p/master/preview.jpg"
         },
         "pink": {
