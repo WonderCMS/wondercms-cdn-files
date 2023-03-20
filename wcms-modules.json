@@ -299,14 +299,6 @@
             "version": "3.0.0",
             "image": "https://raw.githubusercontent.com/robiso/theme-w3css-singlepage/master/preview.jpg"
         },
-        "watercolor": {
-            "name": "Watercolor",
-            "repo": "https://github.com/robiso/watercolor/tree/master",
-            "zip": "https://github.com/robiso/watercolor/archive/master.zip",
-            "summary": "Blue/green version. 100% pagespeed index! Animations. Included icons.",
-            "version": "1.0.0",
-            "image": "https://raw.githubusercontent.com/robiso/watercolor/master/preview.jpg"
-        },
         "material": {
             "name": "Material",
             "repo": "https://github.com/robiso/material/tree/master",
@@ -384,7 +376,7 @@
             "repo": "https://github.com/robiso/fallout/tree/master",
             "zip": "https://github.com/robiso/fallout/archive/master.zip",
             "summary": "Fallout theme with some cool animations. Back to top button included for scrollable pages.",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "image": "https://raw.githubusercontent.com/robiso/fallout/master/preview.jpg"
         },
         "gold": {
