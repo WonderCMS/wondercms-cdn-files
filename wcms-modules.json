@@ -14,7 +14,7 @@
             "repo": "https://github.com/robiso/simple-blog/tree/master",
             "zip": "https://github.com/robiso/simple-blog/archive/master.zip",
             "summary": "Adds a simple blog section to your WonderCMS website. Created by Stephan Stanisic.",
-            "version": "3.2.3",
+            "version": "3.2.4",
             "image": "https://raw.githubusercontent.com/robiso/simple-blog/master/preview.jpg"
         },
         "simple-statistics": {
@@ -264,7 +264,7 @@
             "repo": "https://github.com/robiso/essence/tree/master",
             "zip": "https://github.com/robiso/essence/archive/master.zip",
             "summary": "Default WonderCMS theme (2020). Works only with WonderCMS 3.0.8 and higher.",
-            "version": "3.2.0",
+            "version": "3.4.2",
             "image": "https://raw.githubusercontent.com/robiso/essence/master/preview.jpg"
         },
         "violet": {
