@@ -466,6 +466,14 @@
             "summary": "Adivvyo theme for WonderCMS.",
             "version": "20205240",
             "image": "https://raw.githubusercontent.com/robiso/wcms-theme-adivvyo/master/preview.jpg"
+        },
+        "watercolor": {
+            "name": "Watercolor",
+            "repo": "https://github.com/robiso/watercolor/tree/master",
+            "zip": "https://github.com/robiso/watercolor/archive/master.zip",
+            "summary": "Blue/green version. 100% pagespeed index! Animations. Included icons.",
+            "version": "3.4.2",
+            "image": "https://raw.githubusercontent.com/robiso/watercolor/master/preview.jpg"
         }
     }
 }
