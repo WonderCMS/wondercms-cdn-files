@@ -248,6 +248,14 @@
             "summary": "WonderCMS 設定頁中文化",
             "version": "3.3.4",
             "image": "https://raw.githubusercontent.com/robiso/translation-taiwan/main/preview.jpg"
+        },
+        "translation-romanian": {
+            "name": "Translation Romanian",
+            "repo": "https://github.com/brteamro/translation-romanian/tree/master",
+            "zip": "https://github.com/brteamro/translation-romanian/archive/master.zip",
+            "summary": "Romanian translation for WonderCMS settings.",
+            "version": "3.4.3",
+            "image": "https://raw.githubusercontent.com/brteamro/translation-romanian/master/preview.jpg"
         }
     },
     "themes": {
