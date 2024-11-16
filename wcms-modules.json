@@ -267,6 +267,14 @@
             "version": "3.4.2",
             "image": "https://raw.githubusercontent.com/robiso/essence/master/preview.jpg"
         },
+        "GregCustom": {
+            "name": "GregCustom",
+            "repo": "https://github.com/NorfolkGreg/GregCustom/tree/master",
+            "zip": "https://github.com/NorfolkGreg/GregCustom/archive/master.zip",
+            "summary": "Theme featuring traditional header and menu bar with added resources to aid customisation.",
+            "version": "0.0.5",
+            "image": "https://raw.githubusercontent.com/NorfolkGreg/GregCustom/master/preview.jpg"
+        },
         "violet": {
             "name": "Violet",
             "repo": "https://github.com/robiso/violet/tree/master",
@@ -290,6 +298,14 @@
             "summary": "Default WonderCMS theme (2018-2020).",
             "version": "3.2.1",
             "image": "https://raw.githubusercontent.com/robiso/default/master/preview.jpg"
+        },
+        "wcms-bs5": {
+            "name": "wcms-bs5",
+            "repo": "https://github.com/joho1968/wcms-bs5/tree/master",
+            "zip": "https://github.com/joho1968/wcms-bs5/archive/master.zip",
+            "summary": "Simple WonderCMS Bootstrap 5 theme.",
+            "version": "1.2.2",
+            "image": "https://raw.githubusercontent.com/joho1968/wcms-bs5/master/preview.jpg"
         },
         "theme-w3css-singlepage": {
             "name": "Theme W3css Singlepage",
