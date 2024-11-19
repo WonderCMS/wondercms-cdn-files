@@ -272,7 +272,7 @@
             "repo": "https://github.com/NorfolkGreg/GregCustom/tree/master",
             "zip": "https://github.com/NorfolkGreg/GregCustom/archive/master.zip",
             "summary": "Theme featuring traditional header and menu bar with added resources to aid customisation.",
-            "version": "0.0.5",
+            "version": "1.0.0",
             "image": "https://raw.githubusercontent.com/NorfolkGreg/GregCustom/master/preview.jpg"
         },
         "violet": {
