@@ -289,3 +289,82 @@ const wcmsAdminActions = {
 document.addEventListener("DOMContentLoaded", function () {
     new wcmsAdmin();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (typeof modalPersistence === 'undefined' || !modalPersistence) return;
+
+    // Rest of the original implementation
+    const modalSelector = '[href="#settingsModal"]';
+    const tabStorageKey = 'wondercmsLastActiveTab';
+    const modalStateKey = 'wondercmsModalState';
+    const defaultTab = '#currentPage';
+    const animationDelay = 50;
+
+    const modalButton = document.querySelector(modalSelector);
+    if (!modalButton) return;
+
+    let isFirstInteraction = true;
+    let modalOpen = localStorage.getItem(modalStateKey) === 'open';
+
+
+    const handleTabChange = (targetTab = null) => {
+        const allTabs = Array.from(document.querySelectorAll('#settingsModal .nav-link'));
+        const allContents = Array.from(document.querySelectorAll('#settingsModal .tab-pane'));
+        
+        const storedTab = localStorage.getItem(tabStorageKey);
+        const isValidTab = storedTab && allContents.some(c => c.id === storedTab.replace('#', ''));
+        const target = targetTab || (isValidTab ? storedTab : defaultTab);
+
+        const tabButton = allTabs.find(t => t.getAttribute('href') === target);
+        const tabContent = document.querySelector(target);
+
+        if (tabButton && tabContent) {
+            allTabs.forEach(t => t.classList.remove('active'));
+            allContents.forEach(c => c.classList.remove('active', 'show'));
+            tabButton.classList.add('active');
+            tabContent.classList.add('active', 'show');
+        }
+    };
+
+    document.addEventListener('click', (e) => {
+        const tabLink = e.target.closest('#settingsModal .nav-link');
+        if (tabLink) {
+            const tabId = tabLink.getAttribute('href');
+            localStorage.setItem(tabStorageKey, tabId);
+            handleTabChange(tabId);
+        }
+    });
+
+    const updateModalState = (state) => {
+        modalOpen = state;
+        localStorage.setItem(modalStateKey, state ? 'open' : 'closed');
+    };
+
+    if (modalOpen) {
+        modalButton.click();
+        setTimeout(() => handleTabChange(), animationDelay);
+    }
+
+    document.addEventListener('click', (e) => {
+        const closeButton = e.target.closest('.close, .modal-backdrop');
+        if (closeButton) {
+            updateModalState(false);
+        }
+    });
+
+    modalButton.addEventListener('click', () => {
+        updateModalState(true);
+        if (isFirstInteraction) {
+            setTimeout(() => {
+                handleTabChange();
+                isFirstInteraction = false;
+            }, animationDelay);
+        }
+    });
+
+    window.addEventListener('beforeunload', () => {
+        if (modalOpen) {
+            localStorage.setItem(modalStateKey, 'open');
+        }
+    });
+});
