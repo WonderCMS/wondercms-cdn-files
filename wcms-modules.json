@@ -6,7 +6,7 @@
             "repo": "https://github.com/robiso/summernote-editor/tree/master",
             "zip": "https://github.com/robiso/summernote-editor/archive/master.zip",
             "summary": "Adds an WYSIWYG editor to all content editable fields.",
-            "version": "3.4.1",
+            "version": "3.5.0",
             "image": "https://raw.githubusercontent.com/robiso/summernote-editor/master/preview.jpg"
         },
         "simple-blog": {
@@ -14,7 +14,7 @@
             "repo": "https://github.com/robiso/simple-blog/tree/master",
             "zip": "https://github.com/robiso/simple-blog/archive/master.zip",
             "summary": "Adds a simple blog section to your WonderCMS website. Created by Stephan Stanisic.",
-            "version": "3.2.4",
+            "version": "3.5.0",
             "image": "https://raw.githubusercontent.com/robiso/simple-blog/master/preview.jpg"
         },
         "simple-statistics": {
@@ -256,7 +256,7 @@
             "repo": "https://github.com/robiso/sky/tree/master",
             "zip": "https://github.com/robiso/sky/archive/master.zip",
             "summary": "Default WonderCMS theme (2022). Theme works without Bootstrap and jQuery.",
-            "version": "3.2.3",
+            "version": "3.5.0",
             "image": "https://raw.githubusercontent.com/robiso/sky/master/preview.jpg"
         },
         "essence": {
