@@ -222,7 +222,7 @@
             "repo": "https://github.com/robiso/translation-italian/tree/main",
             "zip": "https://github.com/robiso/translation-italian/archive/main.zip",
             "summary": "Italian translation for WonderCMS settings.",
-            "version": "3.2.0",
+            "version": "3.5.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-italian/main/preview.jpg"
         },
         "translation-ukranian": {
