@@ -86,7 +86,7 @@
             "repo": "https://github.com/robiso/contact-form/tree/master",
             "zip": "https://github.com/robiso/contact-form/archive/master.zip",
             "summary": "Basic contact form. Important: Requires manual editing of two additional files (config and theme.php).",
-            "version": "3.5.3",
+            "version": "3.5.4",
             "image": "https://raw.githubusercontent.com/robiso/contact-form/master/preview.jpg"
         },
         "translation-german": {
