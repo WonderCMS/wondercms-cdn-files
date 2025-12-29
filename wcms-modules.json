@@ -89,6 +89,14 @@
             "version": "3.5.4",
             "image": "https://raw.githubusercontent.com/robiso/contact-form/master/preview.jpg"
         },
+        "summernote-lite-editor": {
+            "name": "Summernote Lite Editor",
+            "repo": "https://github.com/robiso/summernote-lite-editor/tree/main",
+            "zip": "https://github.com/robiso/summernote-lite-editor/archive/main.zip",
+            "summary": "Adds a framework-agnostic (Summernote Lite) WYSIWYG editor to all content editable fields.",
+            "version": "3.6.0",
+            "image": "https://raw.githubusercontent.com/robiso/summernote-lite-editor/main/preview.jpg"
+        },
         "translation-german": {
             "name": "Translation German",
             "repo": "https://github.com/robiso/translation-german/tree/master",
