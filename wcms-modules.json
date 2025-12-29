@@ -6,6 +6,7 @@
             "repo": "https://github.com/robiso/summernote-editor/tree/master",
             "zip": "https://github.com/robiso/summernote-editor/archive/master.zip",
             "summary": "Adds an WYSIWYG editor to all content editable fields.",
+            "group": "editor",
             "version": "3.5.0",
             "image": "https://raw.githubusercontent.com/robiso/summernote-editor/master/preview.jpg"
         },
@@ -70,6 +71,7 @@
             "repo": "https://github.com/robiso/summernote-air-editor/tree/master",
             "zip": "https://github.com/robiso/summernote-air-editor/archive/master.zip",
             "summary": "Floating version of the summernote editor. Editor becomes visible only after selecting text with your cursor.",
+            "group": "editor",
             "version": "3.2.0",
             "image": "https://raw.githubusercontent.com/robiso/summernote-air-editor/master/preview.jpg"
         },
@@ -78,6 +80,7 @@
             "repo": "https://github.com/robiso/monaco-editor/tree/master",
             "zip": "https://github.com/robiso/monaco-editor/archive/master.zip",
             "summary": "Adds the Microsoft Monaco editor on content editable fields. Important: to save changes, you must click CTRL+S.",
+            "group": "editor",
             "version": "3.0.4",
             "image": "https://raw.githubusercontent.com/robiso/monaco-editor/master/preview.jpg"
         },
@@ -94,6 +97,7 @@
             "repo": "https://github.com/robiso/summernote-lite-editor/tree/main",
             "zip": "https://github.com/robiso/summernote-lite-editor/archive/main.zip",
             "summary": "Summernote Lite - editor without Bootstrap library.",
+            "group": "editor",
             "version": "3.6.0",
             "image": "https://raw.githubusercontent.com/robiso/summernote-lite-editor/main/preview.jpg"
         },
@@ -102,6 +106,7 @@
             "repo": "https://github.com/robiso/translation-german/tree/master",
             "zip": "https://github.com/robiso/translation-german/archive/master.zip",
             "summary": "German language pack.",
+            "group": "translation",
             "version": "3.0.2",
             "image": "https://raw.githubusercontent.com/robiso/translation-german/master/preview.jpg"
         },
@@ -110,6 +115,7 @@
             "repo": "https://github.com/robiso/translation-russian/tree/master",
             "zip": "https://github.com/robiso/translation-russian/archive/master.zip",
             "summary": "Russian language pack. Пакет русской локализации.",
+            "group": "translation",
             "version": "3.1.2",
             "image": "https://raw.githubusercontent.com/robiso/translation-russian/master/preview.jpg"
         },
@@ -118,6 +124,7 @@
             "repo": "https://github.com/robiso/translation-dutch/tree/master",
             "zip": "https://github.com/robiso/translation-dutch/archive/master.zip",
             "summary": "Dutch language pack.",
+            "group": "translation",
             "version": "3.0.2",
             "image": "https://raw.githubusercontent.com/robiso/translation-dutch/master/preview.jpg"
         },
@@ -126,6 +133,7 @@
             "repo": "https://github.com/robiso/translation-polish/tree/master",
             "zip": "https://github.com/robiso/translation-polish/archive/master.zip",
             "summary": "Polish language pack.",
+            "group": "translation",
             "version": "3.1.4",
             "image": "https://raw.githubusercontent.com/robiso/translation-polish/master/preview.jpg"
         },
@@ -134,6 +142,7 @@
             "repo": "https://github.com/robiso/translation-slovenian/tree/master",
             "zip": "https://github.com/robiso/translation-slovenian/archive/master.zip",
             "summary": "Slovenian translation for WonderCMS settings.",
+            "group": "translation",
             "version": "3.0.2",
             "image": "https://raw.githubusercontent.com/robiso/translation-slovenian/master/preview.jpg"
         },
@@ -142,6 +151,7 @@
             "repo": "https://github.com/robiso/translation-french/tree/master",
             "zip": "https://github.com/robiso/translation-french/archive/master.zip",
             "summary": "French translation for WonderCMS settings.",
+            "group": "translation",
             "version": "3.1.2",
             "image": "https://raw.githubusercontent.com/robiso/translation-french/master/preview.jpg"
         },
@@ -150,6 +160,7 @@
             "repo": "https://github.com/robiso/translation-spanish/tree/master",
             "zip": "https://github.com/robiso/translation-spanish/archive/master.zip",
             "summary": "Spanish translation for WonderCMS settings.",
+            "group": "translation",
             "version": "3.0.1",
             "image": "https://raw.githubusercontent.com/robiso/translation-spanish/master/preview.jpg"
         },
@@ -158,6 +169,7 @@
             "repo": "https://github.com/robiso/translation-greek/tree/main",
             "zip": "https://github.com/robiso/translation-greek/archive/main.zip",
             "summary": "Greek translation for WonderCMS settings.",
+            "group": "translation",
             "version": "3.0.3",
             "image": "https://raw.githubusercontent.com/robiso/translation-greek/main/preview.jpg"
         },
@@ -166,6 +178,7 @@
             "repo": "https://github.com/robiso/translation-portuguese/tree/main",
             "zip": "https://github.com/robiso/translation-portuguese/archive/main.zip",
             "summary": "Portuguese translation for WonderCMS settings.",
+            "group": "translation",
             "version": "3.0.1",
             "image": "https://raw.githubusercontent.com/robiso/translation-portuguese/main/preview.jpg"
         },
@@ -174,6 +187,7 @@
             "repo": "https://github.com/robiso/translation-swedish/tree/main",
             "zip": "https://github.com/robiso/translation-swedish/archive/main.zip",
             "summary": "Swedish translation for WonderCMS settings.",
+            "group": "translation",
             "version": "3.0.4",
             "image": "https://raw.githubusercontent.com/robiso/translation-swedish/main/preview.jpg"
         },
@@ -182,6 +196,7 @@
             "repo": "https://github.com/robiso/translation-serbian/tree/master",
             "zip": "https://github.com/robiso/translation-serbian/archive/master.zip",
             "summary": "Serbian language pack.",
+            "group": "translation",
             "version": "1.0.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-serbian/master/preview.jpg"
         },
@@ -190,6 +205,7 @@
             "repo": "https://github.com/robiso/translation-danish/tree/main",
             "zip": "https://github.com/robiso/translation-danish/archive/main.zip",
             "summary": "Danish translation for WonderCMS settings.",
+            "group": "translation",
             "version": "1.0.1",
             "image": "https://raw.githubusercontent.com/robiso/translation-danish/main/preview.jpg"
         },
@@ -198,6 +214,7 @@
             "repo": "https://github.com/robiso/translation-korean/tree/main",
             "zip": "https://github.com/robiso/translation-korean/archive/main.zip",
             "summary": "WonderCMS 메뉴 한글 번역 플러그인",
+            "group": "translation",
             "version": "1.0.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-korean/main/preview.jpg"
         },
@@ -206,6 +223,7 @@
             "repo": "https://github.com/robiso/translation-arabic/tree/master",
             "zip": "https://github.com/robiso/translation-arabic/archive/master.zip",
             "summary": "Arabic translation for WonderCMS settings.",
+            "group": "translation",
             "version": "1.0.1",
             "image": "https://raw.githubusercontent.com/robiso/translation-arabic/master/preview.jpg"
         },
@@ -214,6 +232,7 @@
             "repo": "https://github.com/robiso/translation-hausa/tree/master",
             "zip": "https://github.com/robiso/translation-hausa/archive/master.zip",
             "summary": "Hausa translation for WonderCMS settings.",
+            "group": "translation",
             "version": "1.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-hausa/master/preview.jpg"
         },
@@ -222,6 +241,7 @@
             "repo": "https://github.com/robiso/translation-hindi/tree/master",
             "zip": "https://github.com/robiso/translation-hindi/archive/master.zip",
             "summary": "Hindi (हिंदी) translation for WonderCMS settings.",
+            "group": "translation",
             "version": "1.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-hindi/master/preview.jpg"
         },
@@ -230,6 +250,7 @@
             "repo": "https://github.com/robiso/translation-italian/tree/main",
             "zip": "https://github.com/robiso/translation-italian/archive/main.zip",
             "summary": "Italian translation for WonderCMS settings.",
+            "group": "translation",
             "version": "3.5.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-italian/main/preview.jpg"
         },
@@ -238,6 +259,7 @@
             "repo": "https://github.com/robiso/translation-ukranian/tree/main",
             "zip": "https://github.com/robiso/translation-ukranian/archive/main.zip",
             "summary": "Ukranian language pack.",
+            "group": "translation",
             "version": "3.1.2",
             "image": "https://raw.githubusercontent.com/robiso/translation-ukranian/main/preview.jpg"
         },
@@ -246,6 +268,7 @@
             "repo": "https://github.com/robiso/translation-czech/tree/main",
             "zip": "https://github.com/robiso/translation-czech/archive/main.zip",
             "summary": "Czech translation for WonderCMS settings.",
+            "group": "translation",
             "version": "3.2.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-czech/main/preview.jpg"
         },
@@ -254,6 +277,7 @@
             "repo": "https://github.com/robiso/translation-taiwan/tree/main",
             "zip": "https://github.com/robiso/translation-taiwan/archive/main.zip",
             "summary": "WonderCMS 設定頁中文化",
+            "group": "translation",
             "version": "3.3.4",
             "image": "https://raw.githubusercontent.com/robiso/translation-taiwan/main/preview.jpg"
         }
