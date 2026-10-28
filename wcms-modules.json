@@ -143,7 +143,7 @@
             "zip": "https://github.com/robiso/translation-slovenian/archive/master.zip",
             "summary": "Slovenian translation for WonderCMS settings.",
             "group": "translation",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "image": "https://raw.githubusercontent.com/robiso/translation-slovenian/master/preview.jpg"
         },
         "translation-french": {
