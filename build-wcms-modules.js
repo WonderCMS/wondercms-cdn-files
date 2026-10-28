@@ -225,9 +225,13 @@ async function fetchListMeta(file, type) {
 
         console.log(`Metadata from ${repo}:`);
 
-        // Log and aggregate plugins
+        // Log and aggregate plugins. A key already provided by an earlier (official) repository is never
+        // overwritten by a later one: a module may not shadow an official name.
         if (repoMeta.plugins) {
             for (const name in repoMeta.plugins) {
+                if (name in aggregatedMeta.plugins) {
+                    throw new Error(`Plugin key "${name}" from ${repo} collides with an already listed module`);
+                }
                 console.log(` - Plugin ${name} @ v${repoMeta.plugins[name].version}`)
             }
 
@@ -237,6 +241,9 @@ async function fetchListMeta(file, type) {
         // Log and aggregate themes
         if (repoMeta.themes) {
             for (const name in repoMeta.themes) {
+                if (name in aggregatedMeta.themes) {
+                    throw new Error(`Theme key "${name}" from ${repo} collides with an already listed module`);
+                }
                 console.log(` - Theme ${name} @ v${repoMeta.themes[name].version}`)
             }
 

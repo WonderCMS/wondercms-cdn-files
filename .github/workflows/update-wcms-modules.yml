@@ -28,10 +28,16 @@ jobs:
         set -e
         git config user.name github-actions
         git config user.email github-actions@github.com
-        # Commit only if there has been changes
+        # Commit when the list changed. Otherwise, on the 1st of the month, record a heartbeat so GitHub's
+        # 60-day inactivity rule never disables this schedule again (it did from 2026-02 to 2026-10).
         if [[ -n $(git status --porcelain wcms-modules.json) ]]; then
             git add wcms-modules.json
             git commit -m "Autoupdate wcms-modules.json"
+            git push
+        elif [[ "$(date +%d)" == "01" ]]; then
+            date -u +%Y-%m-%d > .last-build
+            git add .last-build
+            git commit -m "Heartbeat: modules list rebuilt, no changes"
             git push
         else
             echo "No changes to wcms-modules.json"
