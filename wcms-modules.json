@@ -251,7 +251,7 @@
             "zip": "https://github.com/robiso/translation-italian/archive/main.zip",
             "summary": "Italian translation for WonderCMS settings.",
             "group": "translation",
-            "version": "3.5.0",
+            "version": "3.5.1",
             "image": "https://raw.githubusercontent.com/robiso/translation-italian/main/preview.jpg"
         },
         "translation-ukranian": {
@@ -369,7 +369,7 @@
             "repo": "https://github.com/robiso/parallax/tree/master",
             "zip": "https://github.com/robiso/parallax/archive/master.zip",
             "summary": "One of the most advanced WonderCMS themes created by @StephanStanisic.",
-            "version": "3.2.3",
+            "version": "3.2.4",
             "image": "https://raw.githubusercontent.com/robiso/parallax/master/preview.jpg"
         },
         "oldDefault": {
