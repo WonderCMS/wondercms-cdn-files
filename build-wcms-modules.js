@@ -273,8 +273,15 @@ async function buildList() {
         themes: {},
     };
     for (const meta of allMetas) {
-        Object.assign(aggregatedMeta.plugins, meta.plugins);
-        Object.assign(aggregatedMeta.themes, meta.themes);
+        // A repository on one list may declare modules of the other type; the same no-shadowing rule applies here.
+        for (const type of ['plugins', 'themes']) {
+            for (const name in meta[type]) {
+                if (name in aggregatedMeta[type]) {
+                    throw new Error(`${type} key "${name}" is provided by repositories on both lists`);
+                }
+            }
+            Object.assign(aggregatedMeta[type], meta[type]);
+        }
     }
 
     // Pretty-print with 4 spaces indentation

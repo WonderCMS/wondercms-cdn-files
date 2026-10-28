@@ -10,6 +10,10 @@ This repository serves the wcms-admin.js file, which provides a cached version o
   `github.com/robiso/`, review the source (no remote code loading, no tracking without a
   clear opt-in, entry file named after the folder), then add the fork's URL to
   `themes-list.json` or `plugins-list.json`.
+- Two entries predate this rule and are not yet under project control: `GregCustom` is listed
+  from `NorfolkGreg/GregCustom`, and `wcms-bs5` is listed from the robiso fork but its
+  `wcms-modules.json` points the zip at `joho1968/wcms-bs5`. They stay listed as a recorded exception
+  (Robert, 2026-10-28): both predate the rule and both are maintained by their authors.
 - The module's `wcms-modules.json` key must equal its folder name and its entry file
   (`plugins/<key>/<key>.php`, `themes/<key>/theme.php`), case included.
 - `wcms-modules.json` is rebuilt from those lists once a day by the workflow in
