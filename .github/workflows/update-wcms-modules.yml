@@ -7,17 +7,20 @@ on:
     # Run daily at 3am
     - cron: '0 3 * * *'
 
+permissions:
+  contents: write
+
 jobs:
   update-wcms-modules:
     name: Update wcms-modules.json
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Setup Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: '16.x'
+        node-version: '20.x'
     - name: Build wcms-modules.json
       run: node build-wcms-modules.js
     - name: Commit result
