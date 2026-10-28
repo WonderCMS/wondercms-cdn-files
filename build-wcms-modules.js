@@ -221,7 +221,8 @@ async function fetchListMeta(file, type) {
         themes: {},
     };
     for (const repo of repos) {
-        const repoMeta = await fetchMeta(repo, type);
+        const fetched = await fetchMeta(repo, type);
+        const repoMeta = { [type]: fetched[type] || {} }; // a repository on the themes list may only provide themes, and vice versa
 
         console.log(`Metadata from ${repo}:`);
 
