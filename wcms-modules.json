@@ -23,7 +23,7 @@
             "repo": "https://github.com/robiso/simple-statistics/tree/master",
             "zip": "https://github.com/robiso/simple-statistics/archive/master.zip",
             "summary": "A simple and privacy minded analytics/stats plugin.",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "image": "https://raw.githubusercontent.com/robiso/simple-statistics/master/preview.jpg"
         },
         "additional-contents": {
@@ -521,7 +521,7 @@
             "repo": "https://github.com/robiso/wcms-theme-adivvyo/tree/master",
             "zip": "https://github.com/robiso/wcms-theme-adivvyo/archive/master.zip",
             "summary": "Adivvyo theme for WonderCMS.",
-            "version": "20260110A",
+            "version": "20261028A",
             "image": "https://raw.githubusercontent.com/robiso/wcms-theme-adivvyo/master/preview.jpg"
         },
         "watercolor": {
