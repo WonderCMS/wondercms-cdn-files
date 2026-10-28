@@ -274,7 +274,7 @@ async function buildList() {
         themes: {},
     };
     for (const meta of allMetas) {
-        // A repository on one list may declare modules of the other type; the same no-shadowing rule applies here.
+        // fetchListMeta() keeps only each list's own type, so a key here can only collide if the same name sits on both lists.
         for (const type of ['plugins', 'themes']) {
             for (const name in meta[type]) {
                 if (name in aggregatedMeta[type]) {
