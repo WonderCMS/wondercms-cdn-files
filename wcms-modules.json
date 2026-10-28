@@ -272,13 +272,13 @@
             "version": "3.2.0",
             "image": "https://raw.githubusercontent.com/robiso/translation-czech/main/preview.jpg"
         },
-        "translation-Taiwan": {
+        "translation-taiwan": {
             "name": "Translation Taiwan",
             "repo": "https://github.com/robiso/translation-taiwan/tree/main",
             "zip": "https://github.com/robiso/translation-taiwan/archive/main.zip",
             "summary": "WonderCMS 設定頁中文化",
             "group": "translation",
-            "version": "3.3.4",
+            "version": "3.3.5",
             "image": "https://raw.githubusercontent.com/robiso/translation-taiwan/main/preview.jpg"
         }
     },
@@ -288,7 +288,7 @@
             "repo": "https://github.com/robiso/sky/tree/master",
             "zip": "https://github.com/robiso/sky/archive/master.zip",
             "summary": "Default WonderCMS theme (2022). Theme works without Bootstrap and jQuery.",
-            "version": "3.5.0",
+            "version": "3.7.0",
             "image": "https://raw.githubusercontent.com/robiso/sky/master/preview.jpg"
         },
         "essence": {
@@ -304,7 +304,7 @@
             "repo": "https://github.com/NorfolkGreg/GregCustom/tree/master",
             "zip": "https://github.com/NorfolkGreg/GregCustom/archive/master.zip",
             "summary": "Theme featuring traditional header and menu bar with added resources to aid customisation.",
-            "version": "1.0.1",
+            "version": "2.6.0",
             "image": "https://raw.githubusercontent.com/NorfolkGreg/GregCustom/master/preview.jpg"
         },
         "violet": {
@@ -424,7 +424,7 @@
             "repo": "https://github.com/robiso/fallout/tree/master",
             "zip": "https://github.com/robiso/fallout/archive/master.zip",
             "summary": "Fallout theme with some cool animations. Back to top button included for scrollable pages.",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "image": "https://raw.githubusercontent.com/robiso/fallout/master/preview.jpg"
         },
         "gold": {
