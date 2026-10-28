@@ -280,6 +280,15 @@
             "group": "translation",
             "version": "3.3.5",
             "image": "https://raw.githubusercontent.com/robiso/translation-taiwan/main/preview.jpg"
+        },
+        "translation-romanian": {
+            "name": "Translation Romanian",
+            "repo": "https://github.com/robiso/translation-romanian/tree/master",
+            "zip": "https://github.com/robiso/translation-romanian/archive/master.zip",
+            "summary": "Romanian translation for WonderCMS settings.",
+            "group": "translation",
+            "version": "3.0.2",
+            "image": "https://raw.githubusercontent.com/robiso/translation-romanian/master/preview.jpg"
         }
     },
     "themes": {
@@ -328,7 +337,7 @@
             "repo": "https://github.com/robiso/default/tree/master",
             "zip": "https://github.com/robiso/default/archive/master.zip",
             "summary": "Default WonderCMS theme (2018-2020).",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "image": "https://raw.githubusercontent.com/robiso/default/master/preview.jpg"
         },
         "wcms-bs5": {
@@ -512,7 +521,7 @@
             "repo": "https://github.com/robiso/wcms-theme-adivvyo/tree/master",
             "zip": "https://github.com/robiso/wcms-theme-adivvyo/archive/master.zip",
             "summary": "Adivvyo theme for WonderCMS.",
-            "version": "20205240",
+            "version": "20260110A",
             "image": "https://raw.githubusercontent.com/robiso/wcms-theme-adivvyo/master/preview.jpg"
         },
         "watercolor": {
