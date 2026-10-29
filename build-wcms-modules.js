@@ -243,7 +243,7 @@ function validateModule(type, key, meta, repo) {
  * @param file the file, relative to this script, which contains the repositories' URLs.
  * @param type repository type, either "plugins" or "themes".
  * @returns an object with the format of wcms-modules.json
- * @throws Error if any module could not be successfully fetched.
+ * @throws Error if an official module could not be successfully fetched (a third-party failure is skipped and logged).
  */
 async function fetchListMeta(file, type) {
     // Read list of repositories
@@ -259,7 +259,20 @@ async function fetchListMeta(file, type) {
         themes: {},
     };
     for (const repo of repos) {
-        const fetched = await fetchMeta(repo, type);
+        // A third-party repository that 404s, times out or serves bad JSON is SKIPPED with a loud log line, as a bad
+        // entry is below: one dead repository must not freeze every module update for every site. An official
+        // repository still fails the build (the previous list stays published), since dropping it would hide every
+        // official module from every Settings page until the next run.
+        let fetched;
+        try {
+            fetched = await fetchMeta(repo, type);
+        } catch (err) {
+            if (/^https?:\/\/github\.com\/(robiso|WonderCMS)\//i.test(repo)) { // the official lists live under robiso/
+                throw err;
+            }
+            console.error(`SKIPPED repository ${repo}: ${err.message}`);
+            continue;
+        }
         const repoMeta = { [type]: fetched[type] || {} }; // a repository on the themes list may only provide themes, and vice versa
 
         console.log(`Metadata from ${repo}:`);

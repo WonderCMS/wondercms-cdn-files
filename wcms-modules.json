@@ -125,7 +125,7 @@
             "zip": "https://github.com/robiso/translation-dutch/archive/master.zip",
             "summary": "Dutch language pack.",
             "group": "translation",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "image": "https://raw.githubusercontent.com/robiso/translation-dutch/master/preview.jpg"
         },
         "translation-polish": {
@@ -134,7 +134,7 @@
             "zip": "https://github.com/robiso/translation-polish/archive/master.zip",
             "summary": "Polish language pack.",
             "group": "translation",
-            "version": "3.1.4",
+            "version": "3.1.5",
             "image": "https://raw.githubusercontent.com/robiso/translation-polish/master/preview.jpg"
         },
         "translation-slovenian": {
@@ -345,7 +345,7 @@
             "repo": "https://github.com/joho1968/wcms-bs5/tree/master",
             "zip": "https://github.com/joho1968/wcms-bs5/archive/master.zip",
             "summary": "Simple WonderCMS Bootstrap 5 theme.",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "image": "https://raw.githubusercontent.com/joho1968/wcms-bs5/master/preview.jpg"
         },
         "theme-w3css-singlepage": {
