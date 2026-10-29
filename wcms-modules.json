@@ -39,7 +39,7 @@
             "repo": "https://github.com/robiso/simple-seo/tree/master",
             "zip": "https://github.com/robiso/simple-seo/archive/master.zip",
             "summary": "Bare minimal SEO tools. After plugin is installed, it's visible in Settings - Menu. It generates robots.txt and sitemap.txt and improves your website for search engines.",
-            "version": "3.4.3",
+            "version": "3.4.4",
             "image": "https://raw.githubusercontent.com/robiso/simple-seo/master/preview.jpg"
         },
         "hits-counter": {
@@ -255,10 +255,10 @@
             "image": "https://raw.githubusercontent.com/robiso/translation-italian/main/preview.jpg"
         },
         "translation-ukranian": {
-            "name": "Translation ukranain",
+            "name": "Translation Ukrainian",
             "repo": "https://github.com/robiso/translation-ukranian/tree/main",
             "zip": "https://github.com/robiso/translation-ukranian/archive/main.zip",
-            "summary": "Ukranian language pack.",
+            "summary": "Ukrainian language pack.",
             "group": "translation",
             "version": "3.1.4",
             "image": "https://raw.githubusercontent.com/robiso/translation-ukranian/main/preview.jpg"
@@ -521,7 +521,7 @@
             "repo": "https://github.com/robiso/wcms-theme-adivvyo/tree/master",
             "zip": "https://github.com/robiso/wcms-theme-adivvyo/archive/master.zip",
             "summary": "Adivvyo theme for WonderCMS.",
-            "version": "20261028A",
+            "version": "20261029A",
             "image": "https://raw.githubusercontent.com/robiso/wcms-theme-adivvyo/master/preview.jpg"
         },
         "watercolor": {
