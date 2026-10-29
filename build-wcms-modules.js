@@ -200,6 +200,41 @@ async function fetchMeta(repo, type) {
 }
 
 /**
+ * Checks one module's fields before it enters the list. The core prints name, summary and version in the admin's
+ * Settings and links repo and image; the key becomes a folder name and sits in action URLs. Two listed repositories
+ * are third-party, so the shapes are enforced here and a build with a bad entry fails (the published list stays).
+ *
+ * @param type "plugins" or "themes"
+ * @param key the module key
+ * @param meta the module's metadata
+ * @param repo the repository the entry came from, for the error message
+ * @throws Error on the first field that does not fit
+ */
+function validateModule(type, key, meta, repo) {
+    const where = `${type} "${key}" from ${repo}`;
+    if (!/^[A-Za-z0-9_.-]{1,64}$/.test(key)) {
+        throw new Error(`${where}: the key may only contain letters, digits, '.', '-' and '_'`);
+    }
+    for (const field of ['name', 'summary']) {
+        if (typeof meta[field] !== 'string' || meta[field].length > 300 || /[<>]/.test(meta[field])) {
+            throw new Error(`${where}: ${field} must be plain text of at most 300 characters`);
+        }
+    }
+    if (typeof meta.version !== 'string' || !/^[0-9A-Za-z.-]{1,32}$/.test(meta.version)) {
+        throw new Error(`${where}: version must be letters, digits, '.' and '-' only`);
+    }
+    for (const field of ['repo', 'zip']) {
+        if (typeof meta[field] !== 'string' || !/^https:\/\/github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+(\/|$)/.test(meta[field])) {
+            throw new Error(`${where}: ${field} must be an https://github.com/<owner>/<repo> URL`);
+        }
+    }
+    if (meta.image !== undefined && meta.image !== null
+        && (typeof meta.image !== 'string' || !/^https:\/\/(raw\.githubusercontent\.com|github\.com)\/[A-Za-z0-9_.\/-]+\.(png|jpe?g|gif|webp|svg)$/i.test(meta.image))) {
+        throw new Error(`${where}: image must be an https GitHub image URL or absent`);
+    }
+}
+
+/**
  * Fetches all metadata for the repositories stored in the given file.
  *
  * @param file the file, relative to this script, which contains the repositories' URLs.
@@ -233,6 +268,7 @@ async function fetchListMeta(file, type) {
                 if (name in aggregatedMeta.plugins) {
                     throw new Error(`Plugin key "${name}" from ${repo} collides with an already listed module`);
                 }
+                validateModule('plugin', name, repoMeta.plugins[name], repo);
                 console.log(` - Plugin ${name} @ v${repoMeta.plugins[name].version}`)
             }
 
@@ -245,6 +281,7 @@ async function fetchListMeta(file, type) {
                 if (name in aggregatedMeta.themes) {
                     throw new Error(`Theme key "${name}" from ${repo} collides with an already listed module`);
                 }
+                validateModule('theme', name, repoMeta.themes[name], repo);
                 console.log(` - Theme ${name} @ v${repoMeta.themes[name].version}`)
             }
 
