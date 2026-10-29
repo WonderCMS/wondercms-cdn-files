@@ -342,11 +342,11 @@
         },
         "wcms-bs5": {
             "name": "wcms-bs5",
-            "repo": "https://github.com/joho1968/wcms-bs5/tree/master",
-            "zip": "https://github.com/joho1968/wcms-bs5/archive/master.zip",
+            "repo": "https://github.com/robiso/wcms-bs5/tree/master",
+            "zip": "https://github.com/robiso/wcms-bs5/archive/master.zip",
             "summary": "Simple WonderCMS Bootstrap 5 theme.",
-            "version": "1.2.3",
-            "image": "https://raw.githubusercontent.com/joho1968/wcms-bs5/master/preview.jpg"
+            "version": "1.2.4",
+            "image": "https://raw.githubusercontent.com/robiso/wcms-bs5/master/preview.jpg"
         },
         "theme-w3css-singlepage": {
             "name": "Theme W3css Singlepage",
@@ -521,7 +521,7 @@
             "repo": "https://github.com/robiso/wcms-theme-adivvyo/tree/master",
             "zip": "https://github.com/robiso/wcms-theme-adivvyo/archive/master.zip",
             "summary": "Adivvyo theme for WonderCMS.",
-            "version": "20261029B",
+            "version": "20261029A",
             "image": "https://raw.githubusercontent.com/robiso/wcms-theme-adivvyo/master/preview.jpg"
         },
         "watercolor": {
