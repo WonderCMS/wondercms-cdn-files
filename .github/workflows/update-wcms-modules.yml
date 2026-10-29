@@ -4,8 +4,9 @@ name: Update wcms-modules.json
 on:
   workflow_dispatch:
   schedule:
-    # Run daily at 3am
-    - cron: '0 3 * * *'
+    # Daily at 03:17 UTC: an off-the-hour minute, because GitHub delays or drops jobs queued at the top of the hour.
+    # Editing this file re-registers the schedule; the 03:00 slot never fired after the 2026-10-28 re-enable.
+    - cron: '17 3 * * *'
 
 permissions:
   contents: write
