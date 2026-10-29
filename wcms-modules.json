@@ -224,7 +224,7 @@
             "zip": "https://github.com/robiso/translation-arabic/archive/master.zip",
             "summary": "Arabic translation for WonderCMS settings.",
             "group": "translation",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "image": "https://raw.githubusercontent.com/robiso/translation-arabic/master/preview.jpg"
         },
         "translation-hausa": {
@@ -233,7 +233,7 @@
             "zip": "https://github.com/robiso/translation-hausa/archive/master.zip",
             "summary": "Hausa translation for WonderCMS settings.",
             "group": "translation",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "image": "https://raw.githubusercontent.com/robiso/translation-hausa/master/preview.jpg"
         },
         "translation-hindi": {
@@ -242,7 +242,7 @@
             "zip": "https://github.com/robiso/translation-hindi/archive/master.zip",
             "summary": "Hindi (हिंदी) translation for WonderCMS settings.",
             "group": "translation",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "image": "https://raw.githubusercontent.com/robiso/translation-hindi/master/preview.jpg"
         },
         "translation-italian": {
